@@ -1,4 +1,6 @@
+// full theme object
 export const themes = {
+    //general theme
     general: {
       background: "#fdf6f0",
       primary: "#ff4b5c",
