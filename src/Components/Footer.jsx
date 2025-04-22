@@ -50,6 +50,11 @@ function CopyRight() {
   );
 }
 
-// export default function Footer(){
-//     return ();
-// }
+export default function Footer(){
+    return (
+      <footer className="footer">
+        <CopyRight />
+        <SocialMediaIcons gitAccount={""} instagram={""} email={""}/>
+      </footer>
+    );
+}

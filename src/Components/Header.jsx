@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Header( {login, signup} ) {
-  isLoggedIn = false;
+  let isLoggedIn = false;
   return (
     <>
       <header className="header">
