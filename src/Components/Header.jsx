@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Header(props) {
+export default function Header( {login, signup} ) {
   isLoggedIn = false;
   return (
     <>
@@ -28,12 +28,12 @@ export default function Header(props) {
             </li>
             {!isLoggedIn && (
               <li className="navLi">
-                <a href="">{props.login}</a>
+                <a href="">{login}</a>
               </li>
             )}
             {!isLoggedIn && (
               <li className="navLi">
-                <a href="">{props.signup}</a>
+                <a href="">{signup}</a>
               </li>
             )}
             <li className="navLi">
