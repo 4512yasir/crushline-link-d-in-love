@@ -106,7 +106,22 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  
+  .logo{
+    font-family: 'Serif', sans-serif;
+    font-size: 2rem;                   
+    font-style: italic;               
+    font-weight: bold;                
+    color: #333;                       
+    height: auto;                     
+    width: auto;                       
+    padding: 10px 20px;                
+    display: inline-block;             
+    text-align: center;                
+    border-radius: 5px;               
+    background-color: #f2f2f2;        
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);  
+    margin: 10px;                     
+  }
   button:hover {
     background-color: #004d99;
   }
