@@ -1,6 +1,6 @@
 // src/theme/useTheme.jsx
 import React, { createContext, useContext } from "react";
-import themes from "./theme";
+import themes from "./Theme";
 
 const ThemeContext = createContext();
 
