@@ -1,0 +1,108 @@
+.nav-area{
+    background-color: rgb(43, 48, 48);
+    height:10vh;
+}.hero {
+    position: relative;
+    background-image: url("/src/assets/sixteen-miles-out-3ykkMrBvZno-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-text {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 70%;
+    line-height: 1.5;
+    text-align: center;
+    z-index: 1; 
+  }
+  button{
+    padding:5px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #ff3e3e;
+    color: white;
+    border: none;
+  }
+
+  .about-us{
+    text-align: center;
+    width:70%;
+    margin:100px auto;
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
+
+  .testimonials {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f8f3f3;
+  }
+  
+  .testimonials h2 {
+    font-size: 2.5rem;
+    
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+  
+  .testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .testimonial-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+
+  .testimonial-card h4{
+    color:#ff3e3e;
+  }
+  .testimonial-card p{
+    line-height: 1.5;
+  }
+  .testimonial-card img{
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+  }
+
+  
+  

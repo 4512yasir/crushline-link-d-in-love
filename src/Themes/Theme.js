@@ -1,5 +1,7 @@
 // full theme object
-const themes = {
+
+ const themes = {
+
     //general theme
     general: {
       background: "#fdf6f0",
@@ -11,3 +13,4 @@ const themes = {
     
   };
   export default themes;
+
