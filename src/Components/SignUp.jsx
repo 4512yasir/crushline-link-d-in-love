@@ -21,8 +21,9 @@ const SignUp = ({ handleClose }) => {
 
   return (
     <div className="signup-container">
-      <h2><i>Welcome to Crushline</i></h2>
-      <p>✨✨✨</p>
+
+        <h2><i>Link'd in love✨</i></h2>
+        <p> ✨✨✨</p>
       <h2 className="signup-title">Sign Up</h2>
 
       <form className="signup-form" onSubmit={handleSubmit}>
@@ -41,7 +42,7 @@ const SignUp = ({ handleClose }) => {
       <button onClick={handleClose} className="closeModalBtn">Close</button>
 
       <footer className="signup-footer">
-        <p>© 2025 Crushline | Connecting Hearts 💖</p>
+        <p><i>© 2025 Link'd in love| Connecting Hearts 💖</i></p>
       </footer>
     </div>
   );
