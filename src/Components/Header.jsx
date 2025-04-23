@@ -1,29 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import LoginCard from "./LoginCard";
-import SignUp from './SignUp';
+import SignUp from "./SignUp";
+import { ThemeContext } from "../Themes/Usertheme"; 
 import "../Css/Header.css";
 
 export default function Header({ login, signup }) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isLoginVisible, setLoginVisible] = useState(false);
   const [isSignupVisible, setSignupVisible] = useState(false);
+  const [showThemeModal, setShowThemeModal] = useState(false);
 
-  // login
-  const handleLoginClick = () => {
-    setLoginVisible(true);
-  };
+  const { changeTheme } = useContext(ThemeContext); 
+  // Login modal handlers
+  const handleLoginClick = () => setLoginVisible(true);
+  const handleCloseLogin = () => setLoginVisible(false);
 
-  const handleCloseLogin = () => {
-    setLoginVisible(false);
-  };
-// sign up
-  const handleSignupClick = () => {
-    setSignupVisible(true);
-  };
-
-  const handleCloseSignup = () => {
-    setSignupVisible(false);
-  };
+  // Signup modal handlers
+  const handleSignupClick = () => setSignupVisible(true);
+  const handleCloseSignup = () => setSignupVisible(false);
 
   return (
     <>
@@ -58,24 +52,38 @@ export default function Header({ login, signup }) {
             </li>
 
             {!isLoggedIn && (
-              <>
-                <li className="navLi">
-                  <button onClick={handleLoginClick} className="login-btn">
-                    {login}
-                  </button>
-                  <button onClick={handleSignupClick} className="login-btn">
-                    {signup}
-                  </button>
-                </li>
-              </>
+              <li className="navLi">
+                <button onClick={handleLoginClick} className="login-btn">
+                  {login}
+                </button>
+                <button onClick={handleSignupClick} className="login-btn">
+                  {signup}
+                </button>
+              </li>
             )}
 
-            <button>
-              <a href="">THEMES</a>
-            </button>
+            <li className="navLi">
+              <button
+                onClick={() => setShowThemeModal(!showThemeModal)}
+                className="login-btn"
+              >
+                Choose Theme
+              </button>
+            </li>
           </ul>
         </div>
       </header>
+
+      {/* Theme Modal */}
+      {showThemeModal && (
+        <div className="theme-modal">
+          <h3>Select Theme</h3>
+          <button onClick={() => changeTheme("male-theme")}>Male</button>
+          <button onClick={() => changeTheme("female-theme")}>Female</button>
+          <button onClick={() => changeTheme("general-theme")}>General</button>
+          <button onClick={() => setShowThemeModal(false)}>Close</button>
+        </div>
+      )}
 
       {/* Login Modal */}
       {isLoginVisible && (
@@ -90,16 +98,17 @@ export default function Header({ login, signup }) {
         </div>
       )}
 
-{isSignupVisible && (
-  <div className="modalOverlay">
-    <div className="modalContent">
-      <SignUp handleClose={handleCloseSignup} />
-    </div>
-  </div>
-)}
-
-
-   
+      {/* Signup Modal */}
+      {isSignupVisible && (
+        <div className="modalOverlay">
+          <div className="modalContent">
+            <SignUp handleClose={handleCloseSignup} />
+            <button onClick={handleCloseSignup} className="closeModalBtn">
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </>
   );
 }
