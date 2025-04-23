@@ -1,26 +1,24 @@
-// src/theme/useTheme.jsx
-import React, { createContext, useContext } from "react";
-import themes from "./Theme";
-// Creating the Context
-const ThemeContext = createContext();
+// src/Themes/Usertheme.jsx
+import React, { createContext, useState } from "react";
 
-// Creating the ThemeProvider component
-export const ThemeProvider = ({ children }) => {
+// Create the context
+export const ThemeContext = createContext();
+
+const ThemeProvider = ({ children }) => {
+  const [theme, setTheme] = useState("general-theme");
+
+  // Function to change the theme
+  const changeTheme = (newTheme) => {
+    setTheme(newTheme);
+    document.body.className = newTheme; // Apply the theme to body or wherever you'd like
+  };
+
   return (
-    <ThemeContext.Provider value={{ theme: themes }}>
-      <div
-        style={{
-          backgroundColor: themes.general.background, // Using general theme
-          fontFamily: themes.general.font, // Using general font
-          color: themes.general.text, // Using general text color
-          minHeight: "100vh",
-        }}
-      >
-        {children}
-      </div>
+    <ThemeContext.Provider value={{ theme, changeTheme }}>
+      {children}
     </ThemeContext.Provider>
   );
 };
 
-// Creating a custom hook to access the current theme
-export const useTheme = () => useContext(ThemeContext);
+// Default export of ThemeProvider
+export default ThemeProvider;

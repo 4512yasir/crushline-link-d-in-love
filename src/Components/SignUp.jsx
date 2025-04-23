@@ -18,8 +18,9 @@ const SignUp = ({ handleClose }) => {
     alert(`Welcome, ${formData.username}!`);
     handleClose(); // close the modal after signup
   };
-
+ 
   return (
+   
     <div className="signup-container">
 
         <h2><i>Link'd in love✨</i></h2>
@@ -31,9 +32,12 @@ const SignUp = ({ handleClose }) => {
         <input type="email" name="email" placeholder="Email" className="signup-input" onChange={handleChange} required />
         <input type="tel" name="phone" placeholder="Phone Number" className="signup-input" onChange={handleChange} required />
         <input type="password" name="password" placeholder="Password" className="signup-input" onChange={handleChange} required />
+        <input type="number" name="age" placeholder="Age" className="signup-input" onChange={handleChange} required />
         <button type="submit" className="signup-button">Sign Up</button>
       </form>
-
+      <h6>have account?<a href="./login">Login</a></h6>
+      <p className="or-text">or</p>
+      
       <div className="social-login">
         <button className="facebook-btn">Sign up with Facebook</button>
         <button className="google-btn">Sign up with Google</button>

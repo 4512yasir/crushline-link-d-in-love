@@ -1,4 +1,5 @@
 import React from "react";
+import '../Css/Footer.css'
 
 function SocialMediaIcons({ gitAccount, instagram, email }) {
     return (

@@ -1,7 +1,7 @@
 .male-page {
     text-align: center;
     background-color: #121212;
-    color: #fff;
+    color: white;
     font-family: Arial, sans-serif;
     padding: 50px;
 }
@@ -9,6 +9,12 @@
 header {
     background: linear-gradient(to right, #222, #444);
     padding: 40px;
+}
+.crushline{
+    color: white;
+}
+.tagline{
+    color: white;
 }
 
 .cta-btn {

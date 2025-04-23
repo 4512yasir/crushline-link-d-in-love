@@ -10,3 +10,39 @@ html, body {
 #root {
   height: 100%;
 }
+/* GENERAL THEME */
+.general-theme {
+  --bg-color: #ffffff;
+  --text-color: #222;
+  --accent-color: #e75480;
+}
+
+/* MALE THEME */
+.male-theme {
+  --bg-color: #002B5B;
+  --text-color: #ffffff;
+  --accent-color: #4FACFE;
+}
+
+/* FEMALE THEME */
+.female-theme {
+  --bg-color: #FFE5EC;
+  --text-color: #880E4F;
+  --accent-color: #FF69B4;
+}
+
+/* Apply variables globally */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+button, a {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin: 0.5rem;
+  cursor: pointer;
+}
