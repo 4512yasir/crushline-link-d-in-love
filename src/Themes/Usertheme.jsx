@@ -1,17 +1,18 @@
 // src/theme/useTheme.jsx
 import React, { createContext, useContext } from "react";
 import Themes from "./Theme";
-
+// Creating the Context
 const ThemeContext = createContext();
 
+// Creating the ThemeProvider component
 export const ThemeProvider = ({ children }) => {
   return (
     <ThemeContext.Provider value={{ theme: Themes }}>
       <div
         style={{
-          backgroundColor: Themes.background,
-          fontFamily: Themes.font,
-          color: Themes.text,
+          backgroundColor: Themes.general.background, // Using general theme
+          fontFamily: Themes.general.font, // Using general font
+          color: Themes.general.text, // Using general text color
           minHeight: "100vh",
         }}
       >
@@ -21,4 +22,5 @@ export const ThemeProvider = ({ children }) => {
   );
 };
 
+// Creating a custom hook to access the current theme
 export const useTheme = () => useContext(ThemeContext);
