@@ -1,17 +1,28 @@
 import React, { useState } from "react";
 import LoginCard from "./LoginCard";
+import SignUp from './SignUp';
 import "../Css/Header.css";
 
 export default function Header({ login, signup }) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isLoginVisible, setLoginVisible] = useState(false);
+  const [isSignupVisible, setSignupVisible] = useState(false);
 
+  // login
   const handleLoginClick = () => {
     setLoginVisible(true);
   };
 
   const handleCloseLogin = () => {
     setLoginVisible(false);
+  };
+// sign up
+  const handleSignupClick = () => {
+    setSignupVisible(true);
+  };
+
+  const handleCloseSignup = () => {
+    setSignupVisible(false);
   };
 
   return (
@@ -37,7 +48,13 @@ export default function Header({ login, signup }) {
         <div className="navLinksDiv">
           <ul className="navUlContainer">
             <li className="navLi">
-              <a href="#home">Home</a>
+              <a href="#">Home</a>
+            </li>
+            <li className="navLi">
+              <a href="#matches">MATCHES</a>
+            </li>
+            <li className="navLi">
+              <a href="#profile">Profile Page</a>
             </li>
 
             {!isLoggedIn && (
@@ -46,21 +63,21 @@ export default function Header({ login, signup }) {
                   <button onClick={handleLoginClick} className="login-btn">
                     {login}
                   </button>
-                </li>
-                <li className="navLi">
-                  <a href="#signup">{signup}</a>
+                  <button onClick={handleSignupClick} className="login-btn">
+                    {signup}
+                  </button>
                 </li>
               </>
             )}
 
-            <li className="navLi">
-              <a href="#theme">Theme</a>
-            </li>
+            <button>
+              <a href="">THEMES</a>
+            </button>
           </ul>
         </div>
       </header>
 
-      {/* Simple Modal UI for login (conditionally rendered) */}
+      {/* Login Modal */}
       {isLoginVisible && (
         <div className="modalOverlay">
           <div className="modalContent">
@@ -72,6 +89,17 @@ export default function Header({ login, signup }) {
           </div>
         </div>
       )}
+
+{isSignupVisible && (
+  <div className="modalOverlay">
+    <div className="modalContent">
+      <SignUp handleClose={handleCloseSignup} />
+    </div>
+  </div>
+)}
+
+
+   
     </>
   );
 }
