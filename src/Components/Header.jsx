@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import LoginCard from "./LoginCard";
+import "../Css/Header.css";
 
 export default function Header({ login, signup }) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
