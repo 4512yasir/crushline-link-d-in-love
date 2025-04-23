@@ -24,4 +24,3 @@ export const ThemeProvider = ({ children }) => {
 
 // Creating a custom hook to access the current theme
 export const useTheme = () => useContext(ThemeContext);
-

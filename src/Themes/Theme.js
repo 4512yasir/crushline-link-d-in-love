@@ -1,5 +1,7 @@
 // full theme object
+
  const themes = {
+
     //general theme
     general: {
       background: "#fdf6f0",
@@ -8,6 +10,7 @@
       accent: "#ffb400",
       font: "'Poppins', sans-serif",
     },
+    
   };
+  export default themes;
 
-  export default themes
