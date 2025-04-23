@@ -5,6 +5,9 @@ export function LoginCard({ handleClose }) {
   return (
     <div className="login-modal">
       <div className="login-card">
+        <div className="logo">
+            Link'd in love
+        </div>
         <h2>Login</h2>
         <form action="">
           <div className="input-group">
