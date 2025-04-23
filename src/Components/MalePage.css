@@ -32,24 +32,24 @@ header {
     padding: 20px;
     border-radius: 10px;
 }
-.testimonials {
+.testimonials1 {
     text-align: center;
     padding: 40px 20px;
   }
   
-  .testimonial-cards {
+  .testimonial-cards1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
   }
   
-  .testimonial-card {
-    background-image: image();
+  .testimonial-card1{
+
     width: 200px;
     padding: 20px;
     border-radius: 10px;
-    background: #f3e4e4;
+    background: #4a4a4a;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
