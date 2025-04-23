@@ -32,3 +32,39 @@ header {
     padding: 20px;
     border-radius: 10px;
 }
+.testimonials {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .testimonial-card {
+    background-image: image();
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f3e4e4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  
+  
+  .testimonial-card h4 {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .testimonial-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
