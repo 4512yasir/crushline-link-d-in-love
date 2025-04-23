@@ -7,12 +7,12 @@ const ThemeContext = createContext();
 // Creating the ThemeProvider component
 export const ThemeProvider = ({ children }) => {
   return (
-    <ThemeContext.Provider value={{ theme: Themes }}>
+    <ThemeContext.Provider value={{ theme: themes }}>
       <div
         style={{
-          backgroundColor: Themes.general.background, // Using general theme
-          fontFamily: Themes.general.font, // Using general font
-          color: Themes.general.text, // Using general text color
+          backgroundColor: themes.general.background, // Using general theme
+          fontFamily: themes.general.font, // Using general font
+          color: themes.general.text, // Using general text color
           minHeight: "100vh",
         }}
       >
