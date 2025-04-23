@@ -20,10 +20,13 @@ const MalePage = () => {
         <div className="feature">
           <h2>Destined Encounters 💕🔥</h2>
           <p>Thoughtfully crafted matches that spark real chemistry—because love should feel like fate</p>
-        </div>
+        </div><br/>
         <div className="feature">
           <h2>ABOUT US ✨</h2>
-          <p>Meet like-minded individuals in premium dating circles.</p>
+          <p>Step into an exclusive space where connections are intentional and 
+            chemistry is undeniable. We bring together like-minded individuals in 
+            premium dating circles,
+             fostering meaningful relationships that go beyond the ordinary</p>
         </div>
       </section>
       <div className="testimonials1">
