@@ -50,10 +50,6 @@ const MalePage = () => {
   </div>
 </div>
 
-
-      <footer>
-        <p><em>Link'd in Love &copy; 2025 | Privacy Policy | Contact Us </em></p>
-      </footer>
     </div>
   );
 };
