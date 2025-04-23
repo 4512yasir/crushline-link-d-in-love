@@ -1,20 +1,18 @@
 import React , {useState} from "react";
+
+import "./girlyTheme.css";
 import Header from "./Header";
-import "../Css/girlytheme.css";
 
 function GirlyTheme() {
-  const [isLoginVisible, setLoginVisible] = useState(false);
+
 
   return (
     <>
-     <header className="nav-area">
-         <Header
-              login="Login"
-              signup="Sign Up"
-              isLoginVisible={isLoginVisible}
-              setLoginVisible={setLoginVisible}
-            />
-     </header>
+  <div className="nav-area">
+ <Header   login="Login" signup="Signup" />
+  </div>
+     
+  
      <div className="hero">
   <div className="hero-overlay">
     <div className="hero-text">

@@ -1,6 +1,6 @@
 import React from "react";
 import "./MalePage.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const MalePage = () => {
   const handleClick = () => {
@@ -13,9 +13,7 @@ const MalePage = () => {
       <h1 className="crushline">CRUSHLINE ✨</h1>
 
         <p>Step into a world of meaningful connections tailored for the confident man.</p>
-        <button className="cta-btn" onClick={handleClick}><Link to="/SignUp" style={{ textDecoration: "none", color: "inherit" }}>
-    Join Now
-  </Link></button>
+        <button className="cta-btn" onClick={handleClick}>  Join Now  </button>
       </header>
 
       <section className="features">
