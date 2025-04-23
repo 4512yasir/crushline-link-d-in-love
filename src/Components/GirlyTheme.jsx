@@ -1,6 +1,6 @@
 import React , {useState} from "react";
 import Header from "./Header";
-import "../Css/girlytheme.css";
+import "../Css/girlyTheme.css";
 
 function GirlyTheme() {
   const [isLoginVisible, setLoginVisible] = useState(false);
