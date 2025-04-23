@@ -1,17 +1,17 @@
 // src/theme/useTheme.jsx
 import React, { createContext, useContext } from "react";
-import themes from "./theme";
+import Themes from "./Theme";
 
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
   return (
-    <ThemeContext.Provider value={{ theme: themes }}>
+    <ThemeContext.Provider value={{ theme: Themes }}>
       <div
         style={{
-          backgroundColor: generalTheme.background,
-          fontFamily: generalTheme.font,
-          color: generalTheme.text,
+          backgroundColor: Themes.background,
+          fontFamily: Themes.font,
+          color: Themes.text,
           minHeight: "100vh",
         }}
       >
