@@ -1,0 +1,51 @@
+// SignUp.js
+import React, { useState } from "react";
+import "./SignUp.css";
+
+const SignUp = ({ handleClose }) => {
+  const [formData, setFormData] = useState({
+    username: "",
+    email: "",
+    phone: "",
+    password: "",
+  });
+
+  const handleChange = (e) =>
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(`Welcome, ${formData.username}!`);
+    handleClose(); // close the modal after signup
+  };
+
+  return (
+    <div className="signup-container">
+
+        <h2><i>Link'd in love✨</i></h2>
+        <p> ✨✨✨</p>
+      <h2 className="signup-title">Sign Up</h2>
+
+      <form className="signup-form" onSubmit={handleSubmit}>
+        <input type="text" name="username" placeholder="Username" className="signup-input" onChange={handleChange} required />
+        <input type="email" name="email" placeholder="Email" className="signup-input" onChange={handleChange} required />
+        <input type="tel" name="phone" placeholder="Phone Number" className="signup-input" onChange={handleChange} required />
+        <input type="password" name="password" placeholder="Password" className="signup-input" onChange={handleChange} required />
+        <button type="submit" className="signup-button">Sign Up</button>
+      </form>
+
+      <div className="social-login">
+        <button className="facebook-btn">Sign up with Facebook</button>
+        <button className="google-btn">Sign up with Google</button>
+      </div>
+
+      <button onClick={handleClose} className="closeModalBtn">Close</button>
+
+      <footer className="signup-footer">
+        <p><i>© 2025 Link'd in love| Connecting Hearts 💖</i></p>
+      </footer>
+    </div>
+  );
+};
+
+export default SignUp;
