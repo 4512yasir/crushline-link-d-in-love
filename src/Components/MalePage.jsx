@@ -10,7 +10,7 @@ const MalePage = () => {
   return (
     <div className="male-page">
       <header>
-      <h1 className="crushline">CRUSHLINE ✨</h1>
+      <h1 className="crushline"><i>Link'd in love✨</i></h1>
 
         <p className="tagline">Step into a world of meaningful connections tailored for the confident man.</p>
         <button className="cta-btn" onClick={handleClick}>  Join Now  </button>
@@ -20,15 +20,18 @@ const MalePage = () => {
         <div className="feature">
           <h2 className="crushline">Destined Encounters 💕🔥</h2>
           <p className="tagline">Thoughtfully crafted matches that spark real chemistry—because love should feel like fate</p>
-        </div>
+        </div><br/>
         <div className="feature">
-          <h2 className="crushline">ABOUT US ✨</h2>
-          <p className="tagline">Meet like-minded individuals in premium dating circles.</p>
+          <h2>ABOUT US ✨</h2>
+          <p>Step into an exclusive space where connections are intentional and 
+            chemistry is undeniable. We bring together like-minded individuals in 
+            premium dating circles,
+             fostering meaningful relationships that go beyond the ordinary</p>
         </div>
       </section>
 
       <footer>
-        <p className="tagline">Crushline Connections &copy; 2025 | Privacy Policy | Contact Us</p>
+        <p>Crushline Connections &copy; 2025 | Privacy Policy | Contact Us</p>
       </footer>
     </div>
   );
