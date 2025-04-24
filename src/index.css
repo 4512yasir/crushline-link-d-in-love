@@ -12,7 +12,7 @@ html, body {
   height: 100%;
   width: 100%;
 }
-/* GENERAL THEME
+/* GENERAL THEME */
 .general-theme {
   --bg-color: #ffffff;
   --text-color: #222;
@@ -20,18 +20,18 @@ html, body {
 } */
 
 /* MALE THEME */
-/* .male-theme {
+.male-theme {
   --bg-color: #1671d8;
   --text-color: #ffffff;
   --accent-color: #4FACFE;
-} */
+}
 
 /* FEMALE THEME */
-/* .female-theme {
+ .female-theme {
   --bg-color: #FFE5EC;
   --text-color: #880E4F;
   --accent-color: #FF69B4;
-} */
+}
 
 /* Apply variables globally */
 body {
