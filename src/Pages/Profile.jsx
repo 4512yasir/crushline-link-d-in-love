@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../Css/profile.css";
-import Header from "../Components/Header";
+
 
 export default function Profile({ id }) {
   const [data, setData] = useState(null);
