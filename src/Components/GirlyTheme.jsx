@@ -3,7 +3,7 @@ import React , {useState} from "react";
 import "./girlyTheme.css";
 import Header from "./Header";
 
-import "../Css/girlyTheme.css";
+
 
 
 function GirlyTheme() {

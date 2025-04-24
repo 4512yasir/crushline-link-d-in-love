@@ -9,12 +9,13 @@
 header {
     background: linear-gradient(to right, #222, #444);
     padding: 40px;
+    color: aliceblue;
 }
-.crushline{
-    color: white;
+p{
+  color: aliceblue;
 }
-.tagline{
-    color: white;
+h1{
+  color: aliceblue;
 }
 
 .cta-btn {
