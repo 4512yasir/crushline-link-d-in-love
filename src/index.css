@@ -2,6 +2,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  width: 100%;
   height: 100%;
   overflow-x: hidden;
   font-family: sans-serif;
@@ -9,27 +10,28 @@ html, body {
 
 #root {
   height: 100%;
+  width: 100%;
 }
-/* GENERAL THEME */
+/* GENERAL THEME
 .general-theme {
   --bg-color: #ffffff;
   --text-color: #222;
   --accent-color: #e75480;
-}
+} */
 
 /* MALE THEME */
-.male-theme {
-  --bg-color: #002B5B;
+/* .male-theme {
+  --bg-color: #1671d8;
   --text-color: #ffffff;
   --accent-color: #4FACFE;
-}
+} */
 
 /* FEMALE THEME */
-.female-theme {
+/* .female-theme {
   --bg-color: #FFE5EC;
   --text-color: #880E4F;
   --accent-color: #FF69B4;
-}
+} */
 
 /* Apply variables globally */
 body {

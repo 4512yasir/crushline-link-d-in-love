@@ -3,6 +3,7 @@ import LoginCard from "./LoginCard";
 import SignUp from "./SignUp";
 import { ThemeContext } from "../Themes/Usertheme"; 
 import "../Css/Header.css";
+import { Link } from "react-router-dom";
 
 export default function Header({ login, signup }) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -42,13 +43,13 @@ export default function Header({ login, signup }) {
         <div className="navLinksDiv">
           <ul className="navUlContainer">
             <li className="navLi">
-              <a href="#">Home</a>
+              <Link to="/">HOME</Link>
             </li>
             <li className="navLi">
-              <a href="#matches">MATCHES</a>
+              <Link to="/peoplelist">Matches</Link>
             </li>
             <li className="navLi">
-              <a href="#profile">Profile Page</a>
+              <Link to="/profile">Profile</Link>
             </li>
 
             {!isLoggedIn && (

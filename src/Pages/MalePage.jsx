@@ -1,5 +1,5 @@
 import React from "react";
-import "./MalePage.css";
+import "../Css/MalePage.css";
 // import { Link } from "react-router-dom";
 
 const MalePage = () => {
