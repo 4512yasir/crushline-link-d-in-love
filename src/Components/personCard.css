@@ -1,0 +1,79 @@
+.card-area {
+    background-color: #ffffff;
+    width: 200px;
+    padding: 24px;
+    margin: 10px;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e6e6e6;
+  }
+  
+  .card-area:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(215, 174, 202, 0.2); /* subtle lavender shadow */
+  }
+  
+  .card-area .profile-image-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  
+  .card-area img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+     
+  }
+  
+  .status-indicator {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  }
+  
+  .status-indicator.online {
+    background-color: #4caf50; /* green */
+  }
+  
+  .status-indicator.offline {
+    background-color: #96918f; /* red */
+  }
+  
+  .card-area h2 {
+    font-size: 1.25rem;
+    color: #5a4b59; /* muted rosewood */
+    margin: 10px 0 6px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .card-area p {
+    font-size: 1rem;
+    color: #6c6c6c;
+    line-height: 1.4;
+  }
+  
+  .card-area button {
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid #f86767;
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: #f86767;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .card-area button:hover {
+    background-color: #f86767;
+    color: #fff;
+  }
+  
