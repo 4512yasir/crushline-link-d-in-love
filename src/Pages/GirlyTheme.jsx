@@ -1,7 +1,6 @@
-import React , {useState} from "react";
-
-import "./girlyTheme.css";
-import Header from "./Header";
+import React from "react";
+import "../Css/girlyTheme.css";
+import Header from "../Components/Header";
 
 
 
@@ -12,7 +11,7 @@ function GirlyTheme() {
   return (
     <>
   <div className="nav-area">
- <Header   login="Login" signup="Signup" />
+ 
   </div>
      
   

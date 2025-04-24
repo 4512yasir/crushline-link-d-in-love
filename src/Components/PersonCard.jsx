@@ -1,4 +1,4 @@
-import './personCard.css';
+import '../Css/personCard.css';
 
 export default function PersonCard({ user }) {
   return (
