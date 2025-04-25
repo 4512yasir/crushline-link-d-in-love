@@ -3,7 +3,7 @@
   background-color: white;
 }
 
-.female-theme .login-btn {
+.female-theme .login-btn ,.female-theme .btn{
   background-color: #ff3e3e;;
   color: white;
   border: none;
@@ -14,8 +14,10 @@
   transition: background-color 0.2s ease;
 }
 
-.female-theme .login-btn:hover {
-  background-color: #f51111;;
+.female-theme .login-btn:hover,
+.female-theme .btn:hover {
+  background-color: #f51111;
+  color: white;
 }
 
 
@@ -102,6 +104,10 @@
   font-weight: bold;
 }
 
+.female-theme .testimonials p{
+  color: rgb(63, 61, 61);
+}
+
 .female-theme .testimonial-cards {
   display: flex;
   flex-wrap: wrap;
@@ -116,7 +122,7 @@
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 2rem;
-  max-width: 300px;
+  max-width: 400px;
   text-align: left;
   transition: transform 0.3s ease;
 }
@@ -142,6 +148,7 @@
 .female-theme .testimonial-card:hover {
   transform: translateY(-5px);
 }
+
 .testimonial-card h4 {
   color: #ff3e3e;
 }

@@ -4,7 +4,7 @@
   color: white;
 }
 
-.male-theme .login-btn {
+.male-theme .login-btn ,.male-theme .btn{
   background-color: rgb(202, 174, 14);
   color: white;
   border: none;
@@ -15,8 +15,10 @@
   transition: background-color 0.2s ease;
 }
 
-.male-theme .login-btn:hover {
+.male-theme .login-btn:hover,
+.male-theme .btn:hover {
   background-color: rgb(243, 208, 6);
+  color: white;
 }
 
 .male-theme .hero-male {
@@ -83,6 +85,7 @@
 .male-theme .about-us-male p {
   color: white;
   text-align: justify;
+  
 }
 
 .male-theme .testimonials-male {
@@ -97,6 +100,9 @@
   font-weight: bold;
   color: rgb(202, 174, 14);
 }
+.male-theme .testimonials-male p{
+  color: rgb(63, 61, 61);
+}
 
 .male-theme .testimonial-cards-male {
   display: flex;
@@ -110,7 +116,7 @@
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.6);
   padding: 2rem;
-  max-width: 300px;
+  max-width: 400px;
   text-align: left;
   transition: transform 0.3s ease;
 }
@@ -134,6 +140,11 @@
 
 .male-theme .testimonial-card-male:hover {
   transform: translateY(-5px);
+
+}
+
+.male-page {
+
   text-align: center;
   background-color: #121212;
   color: white;
