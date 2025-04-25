@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import "../Css/login.css";
 import { useNavigate } from 'react-router-dom';
 
-
-export function LoginCard({ handleClose }) {
+export function LoginCard({ setIsLoggedIn, handleClose }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -23,8 +22,9 @@ export function LoginCard({ handleClose }) {
 
       if (user) {
         alert('Login successful!');
-        navigate('/peoplelist');
-       handleClose(); // Close the modal after successful login
+        setIsLoggedIn(true); // Set login state to true
+        navigate('/peoplelist'); // Redirect to people list
+        handleClose(); // Close the modal after successful login
       } else {
         setError('Invalid username or password.');
       }
