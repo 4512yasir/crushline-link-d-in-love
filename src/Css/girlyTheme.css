@@ -1,4 +1,27 @@
+
+.female-theme {
+  background-color: white;
+}
+
+.female-theme .login-btn {
+  background-color: #ff3e3e;;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.female-theme .login-btn:hover {
+  background-color: #f51111;;
+}
+
+
+
 .hero {
+
   position: relative;
   background-image: url("/src/assets/sixteen-miles-out-3ykkMrBvZno-unsplash.jpg");
   background-size: cover;
@@ -11,7 +34,9 @@
   justify-content: center;
 }
 
-.hero-overlay {
+
+.female-theme .hero-overlay {
+
   background-color: rgba(0, 0, 0, 0.5); 
   position: absolute;
   top: 0;
@@ -23,7 +48,10 @@
   justify-content: center;
 }
 
-.hero-text {
+
+.female-theme .hero-text {
+
+
   color: white;
   font-size: 2rem;
   font-weight: bold;
@@ -31,53 +59,59 @@
   line-height: 1.5;
   text-align: center;
   z-index: 1; 
-  padding: 0 1rem;
 }
 
-button {
-  padding: 10px 20px;
+.female-theme .hero-text p {
+  color: white;
+}
+
+.female-theme .hero-text button {
+  padding: 5px;
   border-radius: 5px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   background-color: #ff3e3e;
   color: white;
   border: none;
-  cursor: pointer;
 }
 
-.about-us {
+.female-theme .about-us {
   text-align: center;
-  width: 80%;
+  width: 70%;
   margin: 100px auto;
   line-height: 1.5;
   font-size: 1.5rem;
 }
 
-.about-us p {
+
+.female-theme .about-us p {
   color: rgba(0, 0, 0, 0.618);
   text-align: justify;
 }
 
-.testimonials {
+
+.female-theme .testimonials {
   text-align: center;
   padding: 4rem 2rem;
   background-color: #f8f3f3;
 }
 
-.testimonials h2 {
+.female-theme .testimonials h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   font-weight: bold;
 }
 
-.testimonial-cards {
+.female-theme .testimonial-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
 }
 
-.testimonial-card {
+
+.female-theme .testimonial-card {
+
   background-color: #fff;
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -87,6 +121,28 @@ button {
   transition: transform 0.3s ease;
 }
 
+
+.female-theme .testimonial-card h4 {
+  color: #ff3e3e;
+}
+
+.female-theme .testimonial-card p {
+  line-height: 1.5;
+}
+
+.female-theme .testimonial-card img {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.female-theme .testimonial-card:hover {
+  transform: translateY(-5px);
+}
+=======
 .testimonial-card h4 {
   color: #ff3e3e;
 }
@@ -183,3 +239,4 @@ button {
     font-size: 0.95rem;
   }
 }
+

@@ -13,25 +13,25 @@ html, body {
   width: 100%;
 }
 /* GENERAL THEME */
-.general-theme {
+/* .general-theme {
   --bg-color: #3d0a0a;
   --text-color: #fafafa;
   --accent-color: #000000;
-} */
+} */ */
 
 /* MALE THEME */
-.male-theme {
+/* .male-theme {
   --bg-color: #1671d8;
   --text-color: #ddd8d8;
   --accent-color: #0287fc;
-}
+} */
 
 /* FEMALE THEME */
- .female-theme {
+ /* .female-theme {
   --bg-color: #e0043f;
   --text-color: #ffffff;
   --accent-color: #ee0077;
-}
+} */
 
 /* Apply variables globally */
 body {
