@@ -3,7 +3,9 @@ import LoginCard from "./LoginCard";
 import SignUp from "./SignUp";
 import { ThemeContext } from "../Themes/Usertheme"; 
 import "../Css/Header.css";
+import ContactUs from "../Pages/ContactUs";
 import { Link, useNavigate } from "react-router-dom";
+
 
 export default function Header({ isLoggedIn, setIsLoggedIn }) {
   const [isLoginVisible, setLoginVisible] = useState(false);
@@ -39,6 +41,20 @@ export default function Header({ isLoggedIn, setIsLoggedIn }) {
 
         <div className="navLinksDiv">
           <ul className="navUlContainer">
+
+            <li className="navLi">
+              <Link to="/">HOME</Link>
+            </li>
+            <li className="navLi">
+              <Link to="/peoplelist">Matches</Link>
+            </li>
+            <li className="navLi">
+              <Link to="/profile">Profile</Link>
+            </li>
+            <li>
+            <Link to="/ContactUs">Contact Us</Link>
+            </li>
+
             <li className="navLi"><Link to="/">HOME</Link></li>
 
             {isLoggedIn && (
@@ -50,6 +66,7 @@ export default function Header({ isLoggedIn, setIsLoggedIn }) {
                 </li>
               </>
             )}
+
 
             {!isLoggedIn && (
               <>

@@ -6,7 +6,9 @@ import MalePage from "./Pages/MalePage";
 import Header from "./Components/Header";
 import Profile from "./Pages/Profile";
 import PeopleList from "./Pages/PeopleList"; 
+import ContactUs from "./Pages/ContactUs";
 import LoginCard from './Components/LoginCard'
+
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -41,12 +43,20 @@ function App() {
           element={<Profile />}
         />
 
+
+        <Route  
+        path="/ContactUs" 
+           element={<ContactUs />} 
+           />
+
        
         <Route
           path="/login"
           element={<LoginCard setIsLoggedIn={setIsLoggedIn} />}
         />
+
       </Routes>
+   
     </Router>
   );
 }
