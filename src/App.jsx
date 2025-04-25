@@ -9,11 +9,11 @@ import PeopleList from "./Pages/PeopleList";
 import LoginCard from './Components/LoginCard'
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // ✅ login state
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
     <Router>
-      {/* Pass login state to Header and LoginCard */}
+     
       <Header 
         isLoggedIn={isLoggedIn} 
         setIsLoggedIn={setIsLoggedIn} 
@@ -41,7 +41,7 @@ function App() {
           element={<Profile id={1} />}
         />
 
-        {/* ✅ Pass setIsLoggedIn to LoginCard */}
+       
         <Route
           path="/login"
           element={<LoginCard setIsLoggedIn={setIsLoggedIn} />}
