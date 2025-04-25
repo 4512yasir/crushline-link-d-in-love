@@ -1,18 +1,22 @@
 import React from "react";
 import '../Css/Footer.css'
+import emailLogo from "../assets/email-1-svgrepo-com.svg";
+import githubLogo from "../assets/github-142-svgrepo-com.svg";
+import instagramLogo from "../assets/instagram-svgrepo-com.svg";
+import copyrightLogo from "../assets/copyright-svgrepo-com.svg";
 
 function SocialMediaIcons({ gitAccount, instagram, email }) {
     return (
       <>
         <div className="SocialsContainer">
           <div>
-            <img src={gitAccount} alt="gitLogo" />
+            <img src={githubLogo} alt="gitLogo" />
           </div>
           <div>
-            <img src={instagram} alt="instagramLogo" />
+            <img src={instagramLogo} alt="instagramLogo" />
           </div>
           <div>
-            <img src={email} alt="emailLogo" />
+            <img src={emailLogo} alt="emailLogo" />
           </div>
         </div>
       </>
@@ -34,7 +38,7 @@ function CopyRight() {
           <div>
             <img
               className="copyrightImage"
-              src=""
+              src={copyrightLogo}
               alt="copyrightLogo"
             />
           </div>
