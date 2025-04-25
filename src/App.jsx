@@ -6,7 +6,7 @@ import MalePage from "./Pages/MalePage";
 import Header from "./Components/Header";
 import Profile from "./Pages/Profile";
 import PeopleList from "./Pages/PeopleList"; 
-
+import ContactUs from "./Pages/ContactUs";
 function App() {
   return (
     <Router>
@@ -35,8 +35,12 @@ function App() {
           element={  <Profile id={1} />  }
         />
 
-       
+        <Route  
+        path="/ContactUs" 
+           element={<ContactUs />} 
+           />
       </Routes>
+   
     </Router>
   );
 }

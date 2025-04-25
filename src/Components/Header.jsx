@@ -4,6 +4,7 @@ import SignUp from "./SignUp";
 import { ThemeContext } from "../Themes/Usertheme"; 
 import "../Css/Header.css";
 import { Link } from "react-router-dom";
+import ContactUs from "../Pages/ContactUs";
 
 export default function Header({ login, signup }) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -50,6 +51,9 @@ export default function Header({ login, signup }) {
             </li>
             <li className="navLi">
               <Link to="/profile">Profile</Link>
+            </li>
+            <li>
+            <Link to="/ContactUs">Contact Us</Link>
             </li>
 
             {!isLoggedIn && (
