@@ -6,7 +6,15 @@ export default function PersonCard({ user, onLike, onPass } ) {
   const navigate = useNavigate();
 
   const handleViewProfile = () => {
-    navigate(`/profile/${user.id}`); // or user.id if you're using IDs
+    navigate(`/profile/${user.id}`); 
+  };
+  const handleLike = () => {
+    console.log("User liked the profile!");
+   
+  };
+
+  const handlePass = () => {
+    console.log("User passed on the profile!");
   };
 
   return (
