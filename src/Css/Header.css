@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: grey;
   padding: 1rem 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   position: sticky;

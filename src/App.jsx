@@ -45,7 +45,7 @@ function App() {
 
 
         <Route  
-        path="/ContactUs" 
+        path="/contactUs" 
            element={<ContactUs />} 
            />
 
