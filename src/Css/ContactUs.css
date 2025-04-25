@@ -106,3 +106,30 @@
         font-size: 0.95rem;
     }
 }
+.message-container {
+    display: flex;
+    justify-content: flex-end; /* Push message to the right */
+    align-items: center;
+    text-align: right;
+    padding: 10px;
+  }
+  
+  .message-container p {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 300px;
+  }
+  .delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .delete-btn:hover {
+    color: darkred;
+  }
+  

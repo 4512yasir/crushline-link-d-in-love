@@ -11,7 +11,7 @@ import LoginCard from './Components/LoginCard';
 import { ThemeProvider, ThemeContext } from "./Themes/Usertheme";
 import './Css/girlyTheme.css'
 import './Css/MalePage.css'
-
+import ContactUs from "./Pages/ContactUs";
 
 
 
@@ -43,6 +43,7 @@ useEffect(() => {
           <Route path="/peoplelist" element={<PeopleList />} />
           <Route path="/profile/:id" element={<Profile />} />
           <Route path="/login" element={<LoginCard setIsLoggedIn={setIsLoggedIn} />} />
+          <Route path="/ContactUs" element={<ContactUs />} />
         </Routes>
       </Router>
     </ThemeProvider>
