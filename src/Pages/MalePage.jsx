@@ -1,59 +1,98 @@
 import React from "react";
+
+
 import "../Css/MalePage.css";
 // import { Link } from "react-router-dom";
 
 const MalePage = () => {
-  const handleClick = () => {
-    alert("Welcome to Crushline Connections—where love begins! 💖✨");
-  };
 
+  
   return (
-    <div className="male-page">
-      <header>
-      <h1 className="crushline"><i>Link'd in love✨</i></h1>
+    <>
+      
 
-        <p className="tagline">Step into a world of meaningful connections tailored for the confident man.</p>
-        <button className="cta-btn" onClick={handleClick}>  Join Now  </button>
-      </header>
+      <div className="hero-male">
+        <div className="hero-overlay">
+          <div className="hero-text-male">
+            <h1>Love starts with a genuine connection</h1>
+            <p>
+              Step into a space where hearts meet, stories unfold, and something
+              real begins.
+            </p>
 
-      <section className="features">
-        <div className="feature">
-          <h2>Destined Encounters 💕🔥</h2>
-          <p>Thoughtfully crafted matches that spark real chemistry—because love should feel like fate</p>
-        </div><br/>
-        <div className="feature">
-          <h2>ABOUT US ✨</h2>
-          <p>Step into an exclusive space where connections are intentional and 
-            chemistry is undeniable. We bring together like-minded individuals in 
-            premium dating circles,
-             fostering meaningful relationships that go beyond the ordinary</p>
+            <button className="male-button">Subscribe</button>
+          </div>
         </div>
-      </section>
-      <div className="testimonials1">
-  <h2>Testimonials</h2>
+      </div>
 
-  <div className="testimonial-cards1">
-    <div className="testimonial-card1">
-     
-      <p>"I was tired of endless swiping and superficial connections. This app introduced me to real conversations and meaningful relationships. Meeting Anita here was the best thing that ever happened to me!"</p>
-      <h4>— James O.</h4>
-    </div>
+      <div className="about-us-male">
+        <h2>About us</h2>
 
-    <div className="testimonial-card1">
-     
-      <p>"I always believed love finds you when you least expect it. I signed up on a whim, and now, I'm planning my future with someone truly special. Thank you for making love feel effortless!"</p>
-      <h4>— Kelvin T.</h4>
-    </div>
+        <p>
+          We’re a team of four passionate dreamers, developers, and creatives
+          who believe in building real connections in a digital world. Our
+          journey started with a simple idea — to create a space where people
+          feel seen, valued, and loved. Each of us brings something unique to
+          the table: code that works like magic, designs that spark joy, words
+          that speak to the heart, and ideas that keep love at the center of
+          everything we do. We're not just building another dating app. We're
+          planting the seeds of something meaningful — a garden where love grows
+          naturally, gently, and beautifully. Let’s rewrite the love story,
+          together❤️.
+        </p>
+      </div>
 
-    <div className="testimonial-card1">
+      <div className="testimonials-male">
+        <h2>Testimonials</h2>
 
-      <p>"From the first chat to our first date, everything just felt right. This platform gave me the chance to meet someone who truly complements my life. I’m beyond grateful!"</p>
-      <h4>— Samuel B.</h4>
-    </div>
-  </div>
-</div>
+        <div className="testimonial-cards-male">
+          <div className="testimonial-card-male">
+            <img src="/src/assets/blackgirl.jpg" alt="persons image" />
+            <p>
+              "I never thought I'd meet someone who shares my passions and
+              values. Thanks to this app, I found my soulmate, and we're now
+              planning our future together. It really feels like fate brought us
+              together!"
+            </p>
+            <h4>— Mary W.</h4>
+          </div>
 
-    </div>
+          <div className="testimonial-card-male">
+            <img src="/src/assets/blackman.jpg" alt="persons image" />
+            <p>
+              "The interface is so easy to use, and I love how the matches feel
+              more genuine compared to other dating apps. I've met so many
+              interesting people here, but it was when I met Silvia that I knew
+              something real was brewing. Truly, this app changed my life."
+            </p>
+            <h4>— Brian K.</h4>
+          </div>
+
+          <div className="testimonial-card-male">
+            <img src="/src/assets/whitecouple.jpg" alt="persons image" />
+            <p>
+              "We matched on a Sunday, met on Wednesday, and by the weekend, we
+              were making plans for the future. This app allowed us to find a
+              connection so quickly, and it feels like we’ve known each other
+              for years. We couldn’t be happier!"
+            </p>
+            <h4>— Joyce & David</h4>
+          </div>
+
+          <div className="testimonial-card-male">
+            <img src="/src/assets/whitegirl.jpg" alt="persons image" />
+            <p>
+              "At first, I was skeptical about online dating. I had tried other
+              platforms with little success. But this app proved me wrong.
+              Within weeks, I met someone who truly understands me, and we’ve
+              been inseparable since. I couldn’t be more thankful for this
+              opportunity to find love again!"
+            </p>
+            <h4>— Vivian.</h4>
+          </div>
+        </div>
+      </div>
+      </>
   );
 };
 

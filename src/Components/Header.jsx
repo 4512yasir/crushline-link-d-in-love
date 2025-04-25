@@ -11,7 +11,7 @@ export default function Header({ isLoggedIn, setIsLoggedIn }) {
   const [showThemeModal, setShowThemeModal] = useState(false);
 
   const navigate = useNavigate();
-  const { changeTheme } = useContext(ThemeContext); 
+  const { setTheme } = useContext(ThemeContext);
 
   // Handlers
   const handleLoginClick = () => setLoginVisible(true);
@@ -78,9 +78,16 @@ export default function Header({ isLoggedIn, setIsLoggedIn }) {
       {showThemeModal && (
         <div className="theme-modal">
           <h3>Select Theme</h3>
-          <button onClick={() => changeTheme("male-theme")}>Male</button>
-          <button onClick={() => changeTheme("female-theme")}>Female</button>
-          <button onClick={() => changeTheme("general-theme")}>General</button>
+          <button onClick={() => {
+  setTheme("male");  // Set to male theme
+  console.log("Switched to male theme");
+}}>Male Theme</button>
+
+<button onClick={() => {
+  setTheme("girly");  // Set to girly theme
+  console.log("Switched to girly theme");
+}}>Girly Theme</button>
+          
           <button onClick={() => setShowThemeModal(false)}>Close</button>
         </div>
       )}

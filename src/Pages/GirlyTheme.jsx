@@ -5,7 +5,7 @@ import Header from "../Components/Header";
 function GirlyTheme() {
   return (
     <>
-      <div className="nav-area"></div>
+     
 
       <div className="hero">
         <div className="hero-overlay">
