@@ -1,3 +1,4 @@
+
 .female-theme {
   background-color: white;
 }
@@ -17,7 +18,10 @@
   background-color: #f51111;;
 }
 
-.female-theme .hero {
+
+
+.hero {
+
   position: relative;
   background-image: url("/src/assets/sixteen-miles-out-3ykkMrBvZno-unsplash.jpg");
   background-size: cover;
@@ -30,7 +34,9 @@
   justify-content: center;
 }
 
+
 .female-theme .hero-overlay {
+
   background-color: rgba(0, 0, 0, 0.5); 
   position: absolute;
   top: 0;
@@ -42,7 +48,10 @@
   justify-content: center;
 }
 
+
 .female-theme .hero-text {
+
+
   color: white;
   font-size: 2rem;
   font-weight: bold;
@@ -74,10 +83,12 @@
   font-size: 1.5rem;
 }
 
+
 .female-theme .about-us p {
   color: rgba(0, 0, 0, 0.618);
   text-align: justify;
 }
+
 
 .female-theme .testimonials {
   text-align: center;
@@ -98,7 +109,9 @@
   gap: 2rem;
 }
 
+
 .female-theme .testimonial-card {
+
   background-color: #fff;
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -107,6 +120,7 @@
   text-align: left;
   transition: transform 0.3s ease;
 }
+
 
 .female-theme .testimonial-card h4 {
   color: #ff3e3e;
@@ -128,3 +142,101 @@
 .female-theme .testimonial-card:hover {
   transform: translateY(-5px);
 }
+=======
+.testimonial-card h4 {
+  color: #ff3e3e;
+}
+
+.testimonial-card p {
+  line-height: 1.5;
+}
+
+.testimonial-card img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1024px) {
+  .hero-text {
+    font-size: 1.8rem;
+    width: 80%;
+  }
+
+  .about-us {
+    font-size: 1.3rem;
+    width: 90%;
+  }
+
+  .testimonials h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh;
+    background-attachment: scroll;
+  }
+
+  .hero-text {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  .about-us {
+    font-size: 1.2rem;
+  }
+
+  .testimonial-cards {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .testimonial-card {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 60vh;
+    padding: 20px;
+  }
+
+  .hero-text {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
+  .about-us {
+    font-size: 1rem;
+  }
+
+  .testimonials h2 {
+    font-size: 2rem;
+  }
+
+  .testimonial-card {
+    padding: 1.5rem;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 0.95rem;
+  }
+}
+

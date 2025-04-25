@@ -71,7 +71,7 @@ export function LoginCard({ setIsLoggedIn, handleClose }) {
           <button type="submit">Submit</button>
           {error && <p className="error">{error}</p>}
           <p>or</p>
-          <p>
+          <p className='create'>
             New user? <a href="#">Create account</a>
           </p>
         </form>

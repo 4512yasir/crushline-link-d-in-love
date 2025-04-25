@@ -3,6 +3,7 @@ import LoginCard from "./LoginCard";
 import SignUp from "./SignUp";
 import { ThemeContext } from "../Themes/Usertheme"; 
 import "../Css/Header.css";
+import ContactUs from "../Pages/ContactUs";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Header({ isLoggedIn, setIsLoggedIn }) {
@@ -21,8 +22,8 @@ export default function Header({ isLoggedIn, setIsLoggedIn }) {
   const handleCloseSignup = () => setSignupVisible(false);
 
   const handleLogout = () => {
-    setIsLoggedIn(false);
-    navigate("/");
+    setIsLoggedIn(false); // Set the user as logged out
+    navigate("/"); // Navigate to the homepage
   };
 
   return (
@@ -39,8 +40,14 @@ export default function Header({ isLoggedIn, setIsLoggedIn }) {
 
         <div className="navLinksDiv">
           <ul className="navUlContainer">
-            <li className="navLi"><Link to="/">HOME</Link></li>
+            <li className="navLi">
+              <Link to="/">HOME</Link>
+            </li>
+            <li className="navLi">
+              <Link to="/ContactUs">Contact Us</Link>
+            </li>
 
+            {/* Conditionally render links based on login state */}
             {isLoggedIn && (
               <>
                 <li className="navLi"><Link to="/peoplelist">Matches</Link></li>
@@ -99,9 +106,9 @@ export default function Header({ isLoggedIn, setIsLoggedIn }) {
             <h2>Login</h2>
             <LoginCard 
               handleClose={handleCloseLogin} 
-              setIsLoggedIn={setIsLoggedIn} 
+              setIsLoggedIn={setIsLoggedIn} // Passing setIsLoggedIn to LoginCard
             />
-            <button onClick={handleCloseLogin} className="closeModalBtn">Close</button>
+            
           </div>
         </div>
       )}

@@ -146,14 +146,37 @@ body {
    text-decoration: none;
    font-size: 0.9rem;
   }
-
-  p{
-    color: #333;
+  .forgot a:hover{
+    text-decoration: underline;
   }
-
-  p a{
+  .create{
+    margin-top: 0.9px;
+    color: #0066cc;
+   text-decoration: none;
+   font-size: 0.9rem;
+  }
+  .create:hover{
+    text-decoration: underline;
+  }
+  .create p{
+    margin-top: 0.9px;
+    color: #0066cc;
+   text-decoration: none;
+   font-size: 0.9rem;
+  }
+  .create p:hover{
+    text-decoration: underline;
+  }
+  .create p a{
     color:#0066cc;
   }
+  .create p a:hover{
+    text-decoration: underline;
+  }
+  .create p a:hover{
+    text-decoration: underline;
+  }
+
   
   /* Responsive Design */
   @media (max-width: 600px) {

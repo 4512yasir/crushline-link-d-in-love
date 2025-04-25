@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: grey;
   padding: 1rem 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -152,4 +152,29 @@
 
 .theme-modal button:hover {
   background-color: #bbb;
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .navUlContainer {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+
+  .logoDiv {
+    margin-bottom: 1rem;
+  }
+
+  .theme-modal {
+    width: 90%;
+    top: 25%;
+  }
 }

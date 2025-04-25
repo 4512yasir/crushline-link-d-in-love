@@ -1,13 +1,28 @@
+
 import React from "react";
-
-
 import "../Css/MalePage.css";
-// import { Link } from "react-router-dom";
 
 const MalePage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Function to open the modal
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  // Function to close the modal
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleClick = () => {
+    alert("Welcome to Crushline Connections—where love begins! 💖✨");
+  };
+
 
   
   return (
+
     <>
       
 
@@ -93,6 +108,8 @@ const MalePage = () => {
         </div>
       </div>
       </>
+
+  
   );
 };
 

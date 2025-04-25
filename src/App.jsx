@@ -6,10 +6,14 @@ import MalePage from "./Pages/MalePage";
 import Header from "./Components/Header";
 import Profile from "./Pages/Profile";
 import PeopleList from "./Pages/PeopleList"; 
+
 import LoginCard from './Components/LoginCard';
 import { ThemeProvider, ThemeContext } from "./Themes/Usertheme";
 import './Css/girlyTheme.css'
 import './Css/MalePage.css'
+
+
+
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -30,6 +34,7 @@ useEffect(() => {
 
 
   return (
+
     <ThemeProvider>
       <Router>
         <Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
@@ -41,6 +46,8 @@ useEffect(() => {
         </Routes>
       </Router>
     </ThemeProvider>
+
+ 
   );
 }
 
