@@ -3,27 +3,27 @@
     background-color: #121212;
     color: rgb(175, 126, 126);
     font-family: Arial, sans-serif;
-    padding: 50px;
+    padding: 50px 20px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .contact-page h1 {
-    font-size: 36px;
+    font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
 .contact-page p {
-    font-size: 18px;
-    max-width: 600px;
+    font-size: 1.1rem;
+    max-width: 90%;
     margin-bottom: 30px;
 }
 
-/* Contact Details */
 .contact-details {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #d4af37;
     margin-bottom: 20px;
 }
@@ -33,27 +33,30 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 80%;
+    width: 100%;
     max-width: 500px;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
     padding: 12px;
-    font-size: 16px;
+    font-size: 1rem;
     border: none;
     border-radius: 6px;
+    resize: vertical;
 }
 
 .contact-form textarea {
-    height: 120px;
+    min-height: 120px;
 }
 
 .send-btn {
     background-color: #d4af37;
     color: black;
-    font-size: 18px;
+    font-size: 1.1rem;
     padding: 12px 20px;
     border: none;
     border-radius: 8px;
@@ -64,4 +67,42 @@
 .send-btn:hover {
     background-color: #c9a227;
     transform: scale(1.08);
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+    .contact-page h1 {
+        font-size: 2rem;
+    }
+
+    .contact-page p,
+    .contact-details {
+        font-size: 1rem;
+    }
+
+    .send-btn {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-page {
+        padding: 40px 10px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-page h1 {
+        font-size: 1.75rem;
+    }
+
+    .contact-page p {
+        font-size: 0.95rem;
+    }
+
+    .send-btn {
+        font-size: 0.95rem;
+    }
 }

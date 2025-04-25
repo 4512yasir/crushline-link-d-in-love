@@ -341,6 +341,20 @@
         "Dog Training",
         "Food Styling"
       ]
+    },
+    {
+      "id": "c67c",
+      "username": "Somalian_master",
+      "email": "yasiryaska1@gmail.com",
+      "phone": "0758741425",
+      "password": "12345",
+      "age": "23",
+      "gender": "male",
+      "profileImage": "Screenshot from 2025-04-18 17-27-40.png",
+      "bio": "ggg",
+      "location": "Nairobi",
+      "personality": "low playing personality",
+      "description": "trfbher"
     }
   ]
 }
