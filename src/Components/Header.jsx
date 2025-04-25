@@ -3,46 +3,45 @@ import LoginCard from "./LoginCard";
 import SignUp from "./SignUp";
 import { ThemeContext } from "../Themes/Usertheme"; 
 import "../Css/Header.css";
-import { Link } from "react-router-dom";
 import ContactUs from "../Pages/ContactUs";
+import { Link, useNavigate } from "react-router-dom";
 
-export default function Header({ login, signup }) {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+export default function Header({ isLoggedIn, setIsLoggedIn }) {
   const [isLoginVisible, setLoginVisible] = useState(false);
   const [isSignupVisible, setSignupVisible] = useState(false);
   const [showThemeModal, setShowThemeModal] = useState(false);
 
+  const navigate = useNavigate();
   const { changeTheme } = useContext(ThemeContext); 
-  // Login modal handlers
+
+  // Handlers
   const handleLoginClick = () => setLoginVisible(true);
   const handleCloseLogin = () => setLoginVisible(false);
 
-  // Signup modal handlers
   const handleSignupClick = () => setSignupVisible(true);
   const handleCloseSignup = () => setSignupVisible(false);
+
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    navigate("/");
+  };
 
   return (
     <>
       <header className="header">
         <div className="logoDiv">
           <div className="logoImageDiv">
-            <img
-              className="logoImage"
-              src="./src/assets/heart-solid.svg"
-              alt="logo"
-            />
+            <img className="logoImage" src="./src/assets/heart-solid.svg" alt="logo" />
           </div>
           <div className="logoNameDiv">
-            <p className="logoNamePara">
-              Link’d In
-              <br />
-              Love
-            </p>
+            <p className="logoNamePara">Link’d In<br />Love</p>
           </div>
         </div>
 
         <div className="navLinksDiv">
           <ul className="navUlContainer">
+
             <li className="navLi">
               <Link to="/">HOME</Link>
             </li>
@@ -56,15 +55,28 @@ export default function Header({ login, signup }) {
             <Link to="/ContactUs">Contact Us</Link>
             </li>
 
+            <li className="navLi"><Link to="/">HOME</Link></li>
+
+            {isLoggedIn && (
+              <>
+                <li className="navLi"><Link to="/peoplelist">Matches</Link></li>
+                <li className="navLi"><Link to="/profile">Profile</Link></li>
+                <li className="navLi">
+                  <button onClick={handleLogout} className="login-btn">Logout</button>
+                </li>
+              </>
+            )}
+
+
             {!isLoggedIn && (
-              <li className="navLi">
-                <button onClick={handleLoginClick} className="login-btn">
-                  {login}
-                </button>
-                <button onClick={handleSignupClick} className="login-btn">
-                  {signup}
-                </button>
-              </li>
+              <>
+                <li className="navLi">
+                  <button onClick={handleLoginClick} className="login-btn">Login</button>
+                </li>
+                <li className="navLi">
+                  <button onClick={handleSignupClick} className="login-btn">Signup</button>
+                </li>
+              </>
             )}
 
             <li className="navLi">
@@ -95,10 +107,11 @@ export default function Header({ login, signup }) {
         <div className="modalOverlay">
           <div className="modalContent">
             <h2>Login</h2>
-            <LoginCard handleClose={handleCloseLogin} />
-            <button onClick={handleCloseLogin} className="closeModalBtn">
-              Close
-            </button>
+            <LoginCard 
+              handleClose={handleCloseLogin} 
+              setIsLoggedIn={setIsLoggedIn} 
+            />
+            <button onClick={handleCloseLogin} className="closeModalBtn">Close</button>
           </div>
         </div>
       )}
@@ -108,9 +121,7 @@ export default function Header({ login, signup }) {
         <div className="modalOverlay">
           <div className="modalContent">
             <SignUp handleClose={handleCloseSignup} />
-            <button onClick={handleCloseSignup} className="closeModalBtn">
-              Close
-            </button>
+            <button onClick={handleCloseSignup} className="closeModalBtn">Close</button>
           </div>
         </div>
       )}

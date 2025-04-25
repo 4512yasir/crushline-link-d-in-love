@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import Footer from './Components/Footer';
 import GirlyTheme from './Pages/GirlyTheme';
 import MalePage from "./Pages/MalePage";
@@ -7,11 +7,19 @@ import Header from "./Components/Header";
 import Profile from "./Pages/Profile";
 import PeopleList from "./Pages/PeopleList"; 
 import ContactUs from "./Pages/ContactUs";
+import LoginCard from './Components/LoginCard'
+
+
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   return (
     <Router>
-      {/* Global Header on all pages */}
-      <Header login="Login" signup="Signup" />
+     
+      <Header 
+        isLoggedIn={isLoggedIn} 
+        setIsLoggedIn={setIsLoggedIn} 
+      />
 
       <Routes>
         <Route
@@ -31,14 +39,22 @@ function App() {
         />
 
         <Route
-          path="/profile"
-          element={  <Profile id={1} />  }
+          path="/profile/:id"
+          element={<Profile />}
         />
+
 
         <Route  
         path="/ContactUs" 
            element={<ContactUs />} 
            />
+
+       
+        <Route
+          path="/login"
+          element={<LoginCard setIsLoggedIn={setIsLoggedIn} />}
+        />
+
       </Routes>
    
     </Router>

@@ -50,6 +50,10 @@
     font-size: 1.5rem;
   }
 
+  .about-us p{
+    color: rgba(0, 0, 0, 0.618);
+    text-align: justify;
+  }
   .testimonials {
     text-align: center;
     padding: 4rem 2rem;

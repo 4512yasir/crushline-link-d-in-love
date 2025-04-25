@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom"
 import axios from "axios";
 import "../Css/profile.css";
-import Header from "../Components/Header";
 
-export default function Profile({ id }) {
+
+export default function Profile() {
+  const { id } = useParams();
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -11,10 +13,11 @@ export default function Profile({ id }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3001/user/${id}`);
+        const response = await axios.get(`http://localhost:3000/user/${id}`);
         setData(response.data);
       } catch (err) {
         setError(err.message);
+        console.log("Error fetching data")
       } finally {
         setLoading(false);
       }
@@ -53,7 +56,8 @@ export default function Profile({ id }) {
     <p className="detailsP">
       <strong>Age:</strong> {data.age}
     </p>
-    <p className="description">{data.description}</p>
+    <p className="description"><strong>Description: </strong>{data.description}</p>
+
     <div className="interests">
       <strong>Interests:</strong>
       <ul>
