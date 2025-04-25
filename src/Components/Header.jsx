@@ -41,10 +41,10 @@ export default function Header({ isLoggedIn, setIsLoggedIn }) {
         <div className="navLinksDiv">
           <ul className="navUlContainer">
             <li className="navLi">
-              <Link to="/">HOME</Link>
+              {/* <Link to="/">HOME</Link> */}
             </li>
             <li className="navLi">
-              <Link to="/ContactUs">Contact Us</Link>
+              <Link to="/ContactUs" className="btn">Contact Us</Link>
             </li>
 
             {/* Conditionally render links based on login state */}
