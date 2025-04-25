@@ -132,4 +132,30 @@
   .delete-btn:hover {
     color: darkred;
   }
-  
+
+  .replies {
+  padding-left: 20px;
+  border-left: 2px solid #ccc;
+  margin-top: 5px;
+}
+
+.reply-text {
+  background-color: #1b1b1c;
+  padding: 5px;
+  border-radius: 5px;
+  max-width: 250px;
+}
+
+.reply-btn {
+  margin-left: 5px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #4CAF50;
+
+  border: none;
+  border-radius: 5px;
+}
+
+.reply-btn:hover {
+  background-color: #388E3C;
+}

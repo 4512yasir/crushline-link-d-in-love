@@ -7,7 +7,8 @@ const ContactUs = () => {
     email: "",
     message: "",
   });
-// store submited massage
+
+  // Store submitted messages
   const [messages, setMessages] = useState([]);
 
   // Load stored messages when component mounts
@@ -16,20 +17,23 @@ const ContactUs = () => {
     setMessages(storedMessages);
   }, []);
 
+  // Handle input changes in the form
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // Handle message submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
     // Retrieve existing messages or create a new array
     const savedMessages = JSON.parse(localStorage.getItem("messages")) || [];
 
-    // Add the new message
-    savedMessages.push(formData);
+    // Add the new message with timestamp
+    const newMessage = { ...formData, date: new Date().toLocaleString(), replies: [] };
+    savedMessages.push(newMessage);
 
-    // Store the updated messages back in localStorage
+    // Store the updated messages in localStorage
     localStorage.setItem("messages", JSON.stringify(savedMessages));
 
     // Update state to display the new message
@@ -41,17 +45,42 @@ const ContactUs = () => {
     // Reset the form
     setFormData({ name: "", email: "", message: "" });
   };
-//   handle massage deletion
+
+  // Handle message deletion
   const handleDelete = (index) => {
     const updatedMessages = messages.filter((_, i) => i !== index);
-  
+
     // Update local storage
     localStorage.setItem("messages", JSON.stringify(updatedMessages));
-  
+
     // Update state
     setMessages(updatedMessages);
   };
-  
+
+  // Handle reply input changes
+  const handleReplyChange = (e, index) => {
+    const newMessages = [...messages];
+    newMessages[index].newReply = e.target.value;
+    setMessages(newMessages);
+  };
+
+  // Handle sending a reply
+  const handleReply = (index) => {
+    const newMessages = [...messages];
+
+    if (!newMessages[index].replies) {
+      newMessages[index].replies = []; // Initialize replies if empty
+    }
+
+    if (newMessages[index].newReply) {
+      newMessages[index].replies.push(newMessages[index].newReply); // Store reply
+      newMessages[index].newReply = ""; // Clear reply input
+
+      // Update local storage
+      localStorage.setItem("messages", JSON.stringify(newMessages));
+      setMessages(newMessages);
+    }
+  };
 
   return (
     <div className="contact-page">
@@ -101,6 +130,26 @@ const ContactUs = () => {
           messages.map((msg, index) => (
             <div key={index} className="message-box">
               <p><strong>{msg.name}:</strong> {msg.message}</p>
+              <p className="message-date">{msg.date}</p>
+
+              {/* Reply Section */}
+              <input
+                type="text"
+                placeholder="Reply..."
+                value={msg.newReply || ""}
+                onChange={(e) => handleReplyChange(e, index)}
+              />
+              <button className="reply-btn" onClick={() => handleReply(index)}>Reply</button>
+
+              {/* Show Replies */}
+              {msg.replies && msg.replies.length > 0 && (
+                <div className="replies">
+                  {msg.replies.map((reply, i) => (
+                    <p key={i} className="reply-text">🔁 {reply}</p>
+                  ))}
+                </div>
+              )}
+
               <button className="delete-btn" onClick={() => handleDelete(index)}>❌</button>
             </div>
           ))
