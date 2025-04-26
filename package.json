@@ -3,15 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-"scripts": {
-  "start": "node server.js",
-  "build": "vite build",
-  "server": "json-server --watch db1.json"
-},
-
+  "scripts": {
+    "start": "node server.js",
+    "build": "vite build",
+    "server": "json-server --watch db1.json"
+  },
   "dependencies": {
     "18": "^0.0.0",
     "axios": "^1.8.4",
+    "express": "^5.1.0",
+    "json-server": "^1.0.0-beta.3",
     "node": "^23.11.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
