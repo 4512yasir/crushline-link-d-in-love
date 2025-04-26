@@ -355,6 +355,20 @@
       "location": "Nairobi",
       "personality": "low playing personality",
       "description": "trfbher"
+    },
+    {
+      "id": "a86d",
+      "username": "John",
+      "email": "yaskamohamed00@gmail.com",
+      "phone": "0758741425",
+      "password": "12345",
+      "age": "21",
+      "gender": "male",
+      "profileImage": "expense-1.gif",
+      "bio": "i am chill relax guy",
+      "location": "Nairobi",
+      "personality": "low playing personality",
+      "description": "eqwjdhuoaihdnlajdaos"
     }
   ]
 }
