@@ -1,7 +1,7 @@
 {
   "user": [
     {
-      "id": "1",
+      "id": 1,
       "username": "John",
       "email": "john@example.com",
       "password": "1234",
@@ -11,16 +11,10 @@
       "location": "Nairobi",
       "personality": "Outgoing",
       "description": "Lover of the little things in life. Always up for new experiences and making connections.",
-      "age": "27",
-      "isOnline": true,
-      "interests": [
-        "Hiking",
-        "Coffee Brewing",
-        "Photography"
-      ]
+      "isOnline": true
     },
     {
-      "id": "2",
+      "id": 2,
       "username": "Faith",
       "email": "faith@example.com",
       "password": "abcd",
@@ -30,16 +24,10 @@
       "location": "Mombasa",
       "personality": "Introvert",
       "description": "Enjoys deep conversations and walks by the ocean.",
-      "age": "23",
-      "isOnline": true,
-      "interests": [
-        "Painting",
-        "Gardening",
-        "Yoga"
-      ]
+      "isOnline": true
     },
     {
-      "id": "3",
+      "id": 3,
       "username": "Michael",
       "email": "michael@example.com",
       "password": "5678",
@@ -49,16 +37,10 @@
       "location": "Kisumu",
       "personality": "Analytical",
       "description": "Always up for a coding challenge or a good match.",
-      "age": "21",
-      "isOnline": false,
-      "interests": [
-        "Coding",
-        "Football",
-        "Gaming"
-      ]
+      "isOnline": false
     },
     {
-      "id": "4",
+      "id": 4,
       "username": "Angela",
       "email": "angela@example.com",
       "password": "qwer",
@@ -68,16 +50,10 @@
       "location": "Nakuru",
       "personality": "Thoughtful",
       "description": "Believes in quiet moments and meaningful friendships.",
-      "age": 25,
-      "isOnline": true,
-      "interests": [
-        "Reading",
-        "Writing",
-        "Herbal Tea"
-      ]
+      "isOnline": true
     },
     {
-      "id": "5",
+      "id": 5,
       "username": "Brian",
       "email": "brian@example.com",
       "password": "zxcv",
@@ -87,16 +63,10 @@
       "location": "Eldoret",
       "personality": "Energetic",
       "description": "Living life one rep at a time.",
-      "age": "29",
-      "isOnline": false,
-      "interests": [
-        "Weightlifting",
-        "Public Speaking",
-        "Nutrition"
-      ]
+      "isOnline": false
     },
     {
-      "id": "6",
+      "id": 6,
       "username": "Diana",
       "email": "diana@example.com",
       "password": "uiop",
@@ -106,16 +76,10 @@
       "location": "Thika",
       "personality": "Confident",
       "description": "Exploring the world with a smile and a suitcase.",
-      "age": "24",
-      "isOnline": true,
-      "interests": [
-        "Fashion",
-        "Travel",
-        "Vlogging"
-      ]
+      "isOnline": true
     },
     {
-      "id": "7",
+      "id": 7,
       "username": "Kelvin",
       "email": "kelvin@example.com",
       "password": "pass123",
@@ -125,16 +89,10 @@
       "location": "Machakos",
       "personality": "Laid-back",
       "description": "On a quest to find the perfect slice and player two.",
-      "age": "30",
-      "isOnline": false,
-      "interests": [
-        "Video Games",
-        "Comics",
-        "Pizza Tasting"
-      ]
+      "isOnline": false
     },
     {
-      "id": "8",
+      "id": 8,
       "username": "Naomi",
       "email": "naomi@example.com",
       "password": "letmein",
@@ -144,16 +102,10 @@
       "location": "Kitale",
       "personality": "Romantic",
       "description": "Writes her heart out under the moonlight.",
-      "age": "28",
-      "isOnline": true,
-      "interests": [
-        "Poetry",
-        "Stargazing",
-        "Journaling"
-      ]
+      "isOnline": true
     },
     {
-      "id": "9",
+      "id": 9,
       "username": "Alex",
       "email": "alex@example.com",
       "password": "alexpass",
@@ -163,16 +115,10 @@
       "location": "Kericho",
       "personality": "Adventurous",
       "description": "Pedals through code and trails alike.",
-      "age": "31",
-      "isOnline": false,
-      "interests": [
-        "Cycling",
-        "Coding",
-        "Nature Walks"
-      ]
+      "isOnline": false
     },
     {
-      "id": "10",
+      "id": 10,
       "username": "Sophia",
       "email": "sophia@example.com",
       "password": "sophie123",
@@ -182,16 +128,10 @@
       "location": "Nanyuki",
       "personality": "Charming",
       "description": "Cooking up melodies and meals.",
-      "age": "24",
-      "isOnline": true,
-      "interests": [
-        "Singing",
-        "Cooking",
-        "Food Blogging"
-      ]
+      "isOnline": true
     },
     {
-      "id": "11",
+      "id": 11,
       "username": "Elijah",
       "email": "elijah@example.com",
       "password": "elij4h",
@@ -201,16 +141,10 @@
       "location": "Malindi",
       "personality": "Reflective",
       "description": "Exploring the past and the path ahead.",
-      "age": "21",
-      "isOnline": false,
-      "interests": [
-        "Reading History",
-        "Hiking",
-        "Museum Visits"
-      ]
+      "isOnline": false
     },
     {
-      "id": "12",
+      "id": 12,
       "username": "Lilian",
       "email": "lilian@example.com",
       "password": "lilypass",
@@ -220,16 +154,10 @@
       "location": "Naivasha",
       "personality": "Gentle",
       "description": "Brush strokes and paw prints make her day.",
-      "age": "32",
-      "isOnline": true,
-      "interests": [
-        "Painting",
-        "Animal Rescue",
-        "DIY Crafts"
-      ]
+      "isOnline": true
     },
     {
-      "id": "13",
+      "id": 13,
       "username": "Eric",
       "email": "eric@example.com",
       "password": "eric321",
@@ -239,16 +167,10 @@
       "location": "Kakamega",
       "personality": "Curious",
       "description": "Captures life one frame at a time.",
-      "age": "28",
-      "isOnline": true,
-      "interests": [
-        "Photography",
-        "Blogging",
-        "Travel"
-      ]
+      "isOnline": true
     },
     {
-      "id": "14",
+      "id": 14,
       "username": "Brenda",
       "email": "brenda@example.com",
       "password": "br3nd4",
@@ -258,16 +180,10 @@
       "location": "Meru",
       "personality": "Peaceful",
       "description": "Breathing in positivity and peace.",
-      "age": "27",
-      "isOnline": false,
-      "interests": [
-        "Yoga",
-        "Meditation",
-        "Healthy Eating"
-      ]
+      "isOnline": false
     },
     {
-      "id": "15",
+      "id": 15,
       "username": "George",
       "email": "george@example.com",
       "password": "geo456",
@@ -277,16 +193,10 @@
       "location": "Garissa",
       "personality": "Energetic",
       "description": "Beats and vibes are his second language.",
-      "age": "22",
-      "isOnline": true,
-      "interests": [
-        "DJing",
-        "Music Production",
-        "Dancing"
-      ]
+      "isOnline": true
     },
     {
-      "id": "16",
+      "id": 16,
       "username": "Irene",
       "email": "irene@example.com",
       "password": "ir3n3",
@@ -296,16 +206,10 @@
       "location": "Embu",
       "personality": "Warm",
       "description": "Writes with her heart and lives in bloom.",
-      "age": "33",
-      "isOnline": false,
-      "interests": [
-        "Blogging",
-        "Nature Walks",
-        "Plant Care"
-      ]
+      "isOnline": false
     },
     {
-      "id": "17",
+      "id": 17,
       "username": "Lydia",
       "email": "lydia@example.com",
       "password": "shineon",
@@ -315,16 +219,10 @@
       "location": "Naivasha",
       "personality": "Expressive",
       "description": "Finds joy in music and the golden hour.",
-      "age": "32",
-      "isOnline": true,
-      "interests": [
-        "Dancing",
-        "Photography",
-        "Travel"
-      ]
+      "isOnline": true
     },
     {
-      "id": "18",
+      "id": 18,
       "username": "Mark",
       "email": "mark@example.com",
       "password": "letsgo",
@@ -334,6 +232,7 @@
       "location": "Kakamega",
       "personality": "Friendly",
       "description": "Cooking up memories and wagging tails.",
+
       "age": 30,
       "isOnline": false,
       "interests": [
@@ -355,20 +254,6 @@
       "location": "Nairobi",
       "personality": "low playing personality",
       "description": "trfbher"
-    },
-    {
-      "id": "a86d",
-      "username": "John",
-      "email": "yaskamohamed00@gmail.com",
-      "phone": "0758741425",
-      "password": "12345",
-      "age": "21",
-      "gender": "male",
-      "profileImage": "expense-1.gif",
-      "bio": "i am chill relax guy",
-      "location": "Nairobi",
-      "personality": "low playing personality",
-      "description": "eqwjdhuoaihdnlajdaos"
     }
   ]
 }
