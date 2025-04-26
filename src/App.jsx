@@ -21,7 +21,7 @@ function App() {
   // Use useContext to access the theme
   const { theme } = useContext(ThemeContext);
 
-  // This part in App.jsx works correctly now 👇
+
 useEffect(() => {
   document.body.classList.remove("male-theme", "female-theme");
 
@@ -43,7 +43,7 @@ useEffect(() => {
           <Route path="/peoplelist" element={<PeopleList />} />
           <Route path="/profile/:id" element={<Profile />} />
           <Route path="/login" element={<LoginCard setIsLoggedIn={setIsLoggedIn} />} />
-          <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/contactUs" element={<ContactUs />} />
         </Routes>
       </Router>
     </ThemeProvider>
