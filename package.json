@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
+    "start-server1": "node server1.js",
     "build": "vite build",
     "server": "json-server --watch db1.json"
   },
