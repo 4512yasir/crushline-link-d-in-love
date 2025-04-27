@@ -1,7 +1,7 @@
-// server.js
 import express from "express";
 import cors from "cors";
 import fs from "fs";
+import path from "path";
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -11,21 +11,29 @@ app.use(cors());
 app.use(express.json());
 
 // Location of messages.json
-const messagesFile = "./messages.json";
+const messagesFile = path.join(__dirname, "messages.json");
 
 // Helper: Read messages
 const readMessages = () => {
   try {
-    const data = fs.readFileSync(messagesFile, "utf8");
-    return JSON.parse(data);
+    if (fs.existsSync(messagesFile)) {
+      const data = fs.readFileSync(messagesFile, "utf8");
+      return JSON.parse(data);
+    }
+    return []; // Return empty array if file doesn't exist
   } catch (err) {
+    console.error("Error reading messages:", err);
     return [];
   }
 };
 
 // Helper: Save messages
 const saveMessages = (messages) => {
-  fs.writeFileSync(messagesFile, JSON.stringify(messages, null, 2));
+  try {
+    fs.writeFileSync(messagesFile, JSON.stringify(messages, null, 2));
+  } catch (err) {
+    console.error("Error saving messages:", err);
+  }
 };
 
 // POST route to save a message
