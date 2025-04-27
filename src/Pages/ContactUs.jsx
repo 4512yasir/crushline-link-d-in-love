@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../Css/ContactUs.css";
 
 const ContactUs = () => {
@@ -8,77 +8,40 @@ const ContactUs = () => {
     message: "",
   });
 
-  // Store submitted messages
-  const [messages, setMessages] = useState([]);
-
-  // Load stored messages when component mounts
-  useEffect(() => {
-    const storedMessages = JSON.parse(localStorage.getItem("messages")) || [];
-    setMessages(storedMessages);
-  }, []);
-
   // Handle input changes in the form
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   // Handle message submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Retrieve existing messages or create a new array
-    const savedMessages = JSON.parse(localStorage.getItem("messages")) || [];
+    const newMessage = {
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+      date: new Date().toLocaleString(),
+    };
 
-    // Add the new message with timestamp
-    const newMessage = { ...formData, date: new Date().toLocaleString(), replies: [] };
-    savedMessages.push(newMessage);
+    try {
+      const response = await fetch("http://localhost:3001/messages", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(newMessage),
+      });
 
-    // Store the updated messages in localStorage
-    localStorage.setItem("messages", JSON.stringify(savedMessages));
+      if (!response.ok) {
+        throw new Error("Failed to save message");
+      }
 
-    // Update state to display the new message
-    setMessages(savedMessages);
+      alert(`Thank you for reaching out, ${formData.name}! We've saved your message.`);
 
-    // Alert the user
-    alert(`Thank you for reaching out, ${formData.name}! We've saved your message.`);
+      setFormData({ name: "", email: "", message: "" }); // Reset the form
 
-    // Reset the form
-    setFormData({ name: "", email: "", message: "" });
-  };
-
-  // Handle message deletion
-  const handleDelete = (index) => {
-    const updatedMessages = messages.filter((_, i) => i !== index);
-
-    // Update local storage
-    localStorage.setItem("messages", JSON.stringify(updatedMessages));
-
-    // Update state
-    setMessages(updatedMessages);
-  };
-
-  // Handle reply input changes
-  const handleReplyChange = (e, index) => {
-    const newMessages = [...messages];
-    newMessages[index].newReply = e.target.value;
-    setMessages(newMessages);
-  };
-
-  // Handle sending a reply
-  const handleReply = (index) => {
-    const newMessages = [...messages];
-
-    if (!newMessages[index].replies) {
-      newMessages[index].replies = []; // Initialize replies if empty
-    }
-
-    if (newMessages[index].newReply) {
-      newMessages[index].replies.push(newMessages[index].newReply); // Store reply
-      newMessages[index].newReply = ""; // Clear reply input
-
-      // Update local storage
-      localStorage.setItem("messages", JSON.stringify(newMessages));
-      setMessages(newMessages);
+    } catch (error) {
+      console.error("Error sending message:", error);
+      alert("Something went wrong, please try again.");
     }
   };
 
@@ -123,40 +86,6 @@ const ContactUs = () => {
 
         <button type="submit" className="send-btn">Send Message</button>
       </form>
-
-      {/* Display stored messages */}
-      <div className="messages-container">
-        {messages.length > 0 ? (
-          messages.map((msg, index) => (
-            <div key={index} className="message-box">
-              <p><strong>{msg.name}:</strong> {msg.message}</p>
-              <p className="message-date">{msg.date}</p>
-
-              {/* Reply Section */}
-              <input
-                type="text"
-                placeholder="Reply..."
-                value={msg.newReply || ""}
-                onChange={(e) => handleReplyChange(e, index)}
-              />
-              <button className="reply-btn" onClick={() => handleReply(index)}>Reply</button>
-
-              {/* Show Replies */}
-              {msg.replies && msg.replies.length > 0 && (
-                <div className="replies">
-                  {msg.replies.map((reply, i) => (
-                    <p key={i} className="reply-text">🔁 {reply}</p>
-                  ))}
-                </div>
-              )}
-
-              <button className="delete-btn" onClick={() => handleDelete(index)}>❌</button>
-            </div>
-          ))
-        ) : (
-          <p className="no-messages">No messages yet.</p>
-        )}
-      </div>
     </div>
   );
 };
