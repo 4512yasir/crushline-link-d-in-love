@@ -23,10 +23,10 @@ export default function PeopleList() {
   // If there's an error, display the error message
   if (error) return <p>Error: {error}</p>;
 
-  // // Filter users based on the current user's gender
-  // const filteredUsers = users.filter(user => 
-  //   user.gender !== currentUserGender
-  // );
+  // Filter users based on the current user's gender
+  const filteredUsers = users.filter(user => 
+    user.gender !== currentUserGender
+  );
 
   return (
     <>
