@@ -1,9 +1,9 @@
 import React from "react";
 import '../Css/Footer.css'
-import emailLogo from "./src/assets/email-1-svgrepo-com.svg";
-import githubLogo from "./src/assets/github-142-svgrepo-com.svg";
-import instagramLogo from "./src/assets/instagram-svgrepo-com.svg";
-import copyrightLogo from "./src/assets/copyright-svgrepo-com.svg";
+import emailLogo from "../assets/email-1-svgrepo-com.svg";
+import githubLogo from "../assets/github-142-svgrepo-com.svg";
+import instagramLogo from "../assets/instagram-svgrepo-com.svg";
+import copyrightLogo from "../assets/copyright-svgrepo-com.svg";
 
 function SocialMediaIcons({ gitAccount, instagram, email }) {
     return (
