@@ -143,9 +143,11 @@
 
 .male-theme .testimonial-card-male:hover {
   transform: translateY(-5px);
+
 }
 
 .male-page {
+
   text-align: center;
   background-color: #121212;
   color: white;
