@@ -1,66 +1,47 @@
 import express from 'express';
+import cors from 'cors';
 import fs from 'fs';
-import path from 'path';
-import jsonServer from 'json-server';
 
-// Create the express app
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware for parsing JSON data
+// Middleware
+app.use(cors());
 app.use(express.json());
 
-// Path to your messages.json file
-const messagesFile = path.join(process.cwd(), 'messages.json');
+// File where messages are stored
+const messagesFile = './messages.json';
 
-// Helper function to read the messages
+// Helper function to read messages
 const readMessages = () => {
   try {
     const data = fs.readFileSync(messagesFile, 'utf8');
-    return JSON.parse(data).messages; // Return messages array
+    return JSON.parse(data);
   } catch (err) {
     return [];
   }
 };
 
-// Helper function to save the messages
+// Helper function to save messages
 const saveMessages = (messages) => {
-  fs.writeFileSync(messagesFile, JSON.stringify({ messages }, null, 2));
+  fs.writeFileSync(messagesFile, JSON.stringify(messages, null, 2));
 };
 
-// POST route for saving a message
+// POST route to save a new message
 app.post('/messages', (req, res) => {
-  const { name, email, message } = req.body;
   const messages = readMessages();
-
-  const newMessage = {
-    id: Date.now().toString(),  // Use timestamp as a unique ID
-    name,
-    email,
-    message,
-    date: new Date().toLocaleString(),
-  };
-
-  messages.push(newMessage); // Add the new message
-  saveMessages(messages);    // Save updated messages
-
+  messages.push(req.body);
+  saveMessages(messages);
   res.status(201).json({ message: 'Message saved successfully!' });
 });
 
-// Setup json-server for other mock API routes
-const apiRouter = jsonServer.router('db1.json');
-const middlewares = jsonServer.defaults();
-app.use('/api', middlewares, apiRouter);
-
-// Serve Vite static files (build your React app here)
-app.use(express.static(path.join(process.cwd(), 'dist')));
-
-// Handle React routing
-app.get('*', (req, res) => {
-  res.sendFile(path.join(process.cwd(), 'dist', 'index.html'));
+// (Optional) GET route to fetch all messages
+app.get('/messages', (req, res) => {
+  const messages = readMessages();
+  res.json(messages);
 });
 
-// Start the server
+// Start server
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
