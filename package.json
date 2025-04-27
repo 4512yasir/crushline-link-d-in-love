@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "start-server1": "node server1.js",
-    "build": "vite build"
+    "build": "vite build",
+    "start-client": "npm --prefix client run start"
 
 
   },
