@@ -25,7 +25,7 @@ const ContactUs = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:3001/messages", {
+      const response = await fetch("/messages", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newMessage),
