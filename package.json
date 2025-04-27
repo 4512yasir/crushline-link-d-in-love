@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "start-server1": "node server1.js",
-    "build": "vite build",
-    "server": "json-server --watch db1.json"
+    "build": "vite build"
   },
   "dependencies": {
     "18": "^0.0.0",
