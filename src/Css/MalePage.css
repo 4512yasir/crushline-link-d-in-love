@@ -150,7 +150,7 @@
   color: white;
   font-family: Arial, sans-serif;
   padding: 50px 20px;
-  background-image: url(src/assets/blackman.jpg);
+  background-image: url(/assets/blackman.jpg);
   min-height: 100vh;
   background-size: cover;
   background-position: center;
