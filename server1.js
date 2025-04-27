@@ -18,7 +18,8 @@ const readMessages = () => {
   try {
     if (fs.existsSync(messagesFile)) {
       const data = fs.readFileSync(messagesFile, "utf8");
-      return JSON.parse(data);
+      const parsedData = JSON.parse(data);
+      return parsedData.messages || []; // Return messages array or an empty array if not found
     }
     return []; // Return empty array if file doesn't exist
   } catch (err) {
@@ -30,7 +31,8 @@ const readMessages = () => {
 // Helper: Save messages
 const saveMessages = (messages) => {
   try {
-    fs.writeFileSync(messagesFile, JSON.stringify(messages, null, 2));
+    const dataToSave = { messages }; // Wrap messages in the 'messages' key
+    fs.writeFileSync(messagesFile, JSON.stringify(dataToSave, null, 2));
   } catch (err) {
     console.error("Error saving messages:", err);
   }
@@ -39,8 +41,13 @@ const saveMessages = (messages) => {
 // POST route to save a message
 app.post("/messages", (req, res) => {
   const messages = readMessages();
-  messages.push(req.body);
-  saveMessages(messages);
+  const newMessage = {
+    id: Date.now().toString(), // Generate a unique ID based on current timestamp
+    ...req.body, // Spread other properties like name, email, message, etc.
+    date: new Date().toLocaleString(), // Add the current date and time
+  };
+  messages.push(newMessage); // Add the new message to the array
+  saveMessages(messages); // Save updated messages back to the file
   res.status(201).json({ message: "Message saved successfully!" });
 });
 
