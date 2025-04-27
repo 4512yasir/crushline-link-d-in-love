@@ -1,6 +1,7 @@
 import React from "react";
 import "../Css/girlyTheme.css";
 import Header from "../Components/Header";
+import {Link} from "react-router-dom"
 
 function GirlyTheme() {
   return (
@@ -16,7 +17,7 @@ function GirlyTheme() {
               real begins.
             </p>
 
-            <button>Subscribe</button>
+            {/* <button></button> */}
           </div>
         </div>
       </div>

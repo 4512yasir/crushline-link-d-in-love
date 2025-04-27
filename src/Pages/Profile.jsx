@@ -14,6 +14,7 @@ export default function Profile() {
     const fetchData = async () => {
       try {
         const response = await axios.get(`http://localhost:3000/user/${id}`);
+        console.log('jjjjjjj', response)
         setData(response.data);
       } catch (err) {
         setError(err.message);
@@ -61,7 +62,7 @@ export default function Profile() {
     <div className="interests">
       <strong>Interests:</strong>
       <ul>
-        {data.interests.map((interest, index) => (
+        {data && data.interests && data.interests.map((interest, index) => (
           <li key={index}>{interest}</li>
         ))}
       </ul>

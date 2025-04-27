@@ -1,6 +1,7 @@
 
 import React ,{useState} from "react";
 import "../Css/MalePage.css";
+import {Link} from "react-router-dom"
 
 const MalePage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -35,7 +36,7 @@ const MalePage = () => {
               real begins.
             </p>
 
-            <button className="male-button">Subscribe</button>
+            {/* <button className="male-button"><Link to="/signup"> Subscribe</Link></button> */}
           </div>
         </div>
       </div>
