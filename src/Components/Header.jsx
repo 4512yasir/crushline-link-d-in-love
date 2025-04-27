@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import LoginCard from "./LoginCard";
 import SignUp from "./SignUp";
+import heartLogo from './assets/heart-solid.svg';
 import { ThemeContext } from "../Themes/Usertheme"; 
 import "../Css/Header.css";
 import ContactUs from "../Pages/ContactUs";
@@ -31,7 +32,7 @@ export default function Header({ isLoggedIn, setIsLoggedIn }) {
       <header className="header">
         <div className="logoDiv">
           <div className="logoImageDiv">
-            <img className="logoImage" src="./src/assets/heart-solid.svg" alt="logo" />
+          <img className="logoImage" src={heartLogo} alt="logo" />
           </div>
           <div className="logoNameDiv">
             <p className="logoNamePara">Link’d In<br />Love</p>
