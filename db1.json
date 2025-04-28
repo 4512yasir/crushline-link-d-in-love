@@ -11,7 +11,9 @@
       "location": "Nairobi",
       "personality": "Outgoing",
       "description": "Lover of the little things in life. Always up for new experiences and making connections.",
-      "isOnline": true
+      "isOnline": true,
+      "age": 28,
+      "interests": ["Traveling", "Hiking", "Coffee Brewing"]
     },
     {
       "id": "2",
@@ -24,7 +26,9 @@
       "location": "Mombasa",
       "personality": "Introvert",
       "description": "Enjoys deep conversations and walks by the ocean.",
-      "isOnline": true
+      "isOnline": true,
+      "age": 26,
+      "interests": ["Painting", "Nature Walks", "Journaling"]
     },
     {
       "id": "3",
@@ -37,7 +41,9 @@
       "location": "Kisumu",
       "personality": "Analytical",
       "description": "Always up for a coding challenge or a good match.",
-      "isOnline": false
+      "isOnline": false,
+      "age": 30,
+      "interests": ["Programming", "Football", "Tech Gadgets"]
     },
     {
       "id": "4",
@@ -50,7 +56,9 @@
       "location": "Nakuru",
       "personality": "Thoughtful",
       "description": "Believes in quiet moments and meaningful friendships.",
-      "isOnline": true
+      "isOnline": true,
+      "age": 25,
+      "interests": ["Reading", "Tea Tasting", "Writing"]
     },
     {
       "id": "5",
@@ -63,7 +71,9 @@
       "location": "Eldoret",
       "personality": "Energetic",
       "description": "Living life one rep at a time.",
-      "isOnline": false
+      "isOnline": false,
+      "age": 29,
+      "interests": ["Fitness Training", "Public Speaking", "Nutrition"]
     },
     {
       "id": "6",
@@ -76,7 +86,9 @@
       "location": "Thika",
       "personality": "Confident",
       "description": "Exploring the world with a smile and a suitcase.",
-      "isOnline": true
+      "isOnline": true,
+      "age": 27,
+      "interests": ["Fashion Design", "Travel Blogging", "Photography"]
     },
     {
       "id": "7",
@@ -89,7 +101,9 @@
       "location": "Machakos",
       "personality": "Laid-back",
       "description": "On a quest to find the perfect slice and player two.",
-      "isOnline": false
+      "isOnline": false,
+      "age": 24,
+      "interests": ["Gaming", "Pizza Reviews", "Streaming"]
     },
     {
       "id": "8",
@@ -102,7 +116,9 @@
       "location": "Kitale",
       "personality": "Romantic",
       "description": "Writes her heart out under the moonlight.",
-      "isOnline": true
+      "isOnline": true,
+      "age": 23,
+      "interests": ["Poetry", "Stargazing", "Creative Writing"]
     },
     {
       "id": "9",
@@ -115,7 +131,9 @@
       "location": "Kericho",
       "personality": "Adventurous",
       "description": "Pedals through code and trails alike.",
-      "isOnline": false
+      "isOnline": false,
+      "age": 31,
+      "interests": ["Cycling", "Coding", "Adventure Sports"]
     },
     {
       "id": "10",
@@ -128,7 +146,9 @@
       "location": "Nanyuki",
       "personality": "Charming",
       "description": "Cooking up melodies and meals.",
-      "isOnline": true
+      "isOnline": true,
+      "age": 26,
+      "interests": ["Music", "Cooking", "Food Tasting"]
     },
     {
       "id": "11",
@@ -141,7 +161,9 @@
       "location": "Malindi",
       "personality": "Reflective",
       "description": "Exploring the past and the path ahead.",
-      "isOnline": false
+      "isOnline": false,
+      "age": 32,
+      "interests": ["History", "Hiking", "Museum Visits"]
     },
     {
       "id": "12",
@@ -154,7 +176,9 @@
       "location": "Naivasha",
       "personality": "Gentle",
       "description": "Brush strokes and paw prints make her day.",
-      "isOnline": true
+      "isOnline": true,
+      "age": 27,
+      "interests": ["Painting", "Animal Care", "Sketching"]
     },
     {
       "id": "13",
@@ -167,7 +191,9 @@
       "location": "Kakamega",
       "personality": "Curious",
       "description": "Captures life one frame at a time.",
-      "isOnline": true
+      "isOnline": true,
+      "age": 28,
+      "interests": ["Photography", "Storytelling", "Travel"]
     },
     {
       "id": "14",
@@ -180,7 +206,9 @@
       "location": "Meru",
       "personality": "Peaceful",
       "description": "Breathing in positivity and peace.",
-      "isOnline": false
+      "isOnline": false,
+      "age": 30,
+      "interests": ["Yoga", "Meditation", "Wellness Coaching"]
     },
     {
       "id": "15",
@@ -193,7 +221,9 @@
       "location": "Garissa",
       "personality": "Energetic",
       "description": "Beats and vibes are his second language.",
-      "isOnline": true
+      "isOnline": true,
+      "age": 29,
+      "interests": ["DJing", "Music Production", "Dancing"]
     },
     {
       "id": "16",
@@ -206,7 +236,9 @@
       "location": "Embu",
       "personality": "Warm",
       "description": "Writes with her heart and lives in bloom.",
-      "isOnline": false
+      "isOnline": false,
+      "age": 26,
+      "interests": ["Blogging", "Nature Photography", "Gardening"]
     },
     {
       "id": "17",
@@ -219,7 +251,9 @@
       "location": "Naivasha",
       "personality": "Expressive",
       "description": "Finds joy in music and the golden hour.",
-      "isOnline": true
+      "isOnline": true,
+      "age": 24,
+      "interests": ["Dancing", "Photography", "Traveling"]
     },
     {
       "id": "18",
@@ -232,15 +266,9 @@
       "location": "Kakamega",
       "personality": "Friendly",
       "description": "Cooking up memories and wagging tails.",
-
-      "age": 30,
       "isOnline": false,
-      "interests": [
-        "Cooking",
-        "Dog Training",
-        "Food Styling"
-      ]
+      "age": 30,
+      "interests": ["Cooking", "Dog Training", "Food Styling"]
     }
- 
   ]
 }
