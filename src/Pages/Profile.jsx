@@ -12,9 +12,7 @@ export default function Profile() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-
         const response = await axios.get(`/api/user/${id}`);
-
         setData(response.data);
       } catch (err) {
         setError(err.message);
@@ -54,16 +52,17 @@ export default function Profile() {
           <p className="description">
             <strong>Description: </strong>{data?.description || 'No description available'}
           </p>
+        </div>
 
-
-    <div className="interests">
-      <strong>Interests:</strong>
-      <ul>
-        {data && data.interests && data.interests.map((interest, index) => (
-          <li key={index}>{interest}</li>
-        ))}
-      </ul>
-
-    </div>
+        <div className="interests">
+          <strong>Interests:</strong>
+          <ul>
+            {data && data.interests && data.interests.map((interest, index) => (
+              <li key={index}>{interest}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div> 
   );
 }
