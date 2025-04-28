@@ -3,6 +3,9 @@
   background-color: black;
   color: white;
 }
+.male-theme .matches h1{
+  color: white;
+}
 
 .male-theme .login-btn ,.male-theme .btn{
   background-color: rgb(202, 174, 14);

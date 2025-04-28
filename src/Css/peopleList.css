@@ -4,10 +4,13 @@
     gap: 0.5rem;
     padding: 2rem;
     /* background-color: #f0f4f8; */
-    justify-content: space-evenly; 
+    /* justify-content: space-evenly;  */
   }
   .matches{
     text-align: center;
+   
+   
     /* background-color: #f0f4f8; */
     margin-top: 100px;
+
   }

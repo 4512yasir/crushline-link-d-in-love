@@ -1,6 +1,11 @@
 
 .female-theme {
   background-color: white;
+  color: black;
+
+}
+ .female-theme .matches h1{
+  color: black;
 }
 
 .female-theme .login-btn ,.female-theme .btn{

@@ -4,10 +4,14 @@ import useFetch from "../useFetch";
 import '../Css/peopleList.css';
 
 export default function PeopleList() {
+
+  // console.log(users,"yeee")
+
   const { data: users, loading, error } = useFetch("api/user");
   
+
   // Assuming you have a way to determine the current user's gender (you could get this from localStorage, context, or from the backend)
-  const currentUserGender = "male"; // or "female", based on your app's logic (this would typically be dynamic)
+  const currentUserGender = users.gender; // or "female", based on your app's logic (this would typically be dynamic)
 
   const handleLike = (user) => {
     console.log("❤️ Liked:", user.username);

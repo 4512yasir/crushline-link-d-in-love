@@ -41,7 +41,7 @@ export default function Header({ isLoggedIn, setIsLoggedIn }) {
         <div className="navLinksDiv">
           <ul className="navUlContainer">
             <li className="navLi">
-              {/* <Link to="/">HOME</Link> */}
+              <Link to="/" className="btn">HOME</Link>
             </li>
             <li className="navLi">
             <Link to="/ContactUs" className="btn">Contact Us</Link>
@@ -51,8 +51,8 @@ export default function Header({ isLoggedIn, setIsLoggedIn }) {
             {/* Conditionally render links based on login state */}
             {isLoggedIn && (
               <>
-                <li className="navLi"><Link to="/peoplelist">Matches</Link></li>
-                <li className="navLi"><Link to="/profile">Profile</Link></li>
+                <li className="navLi"><Link to="/peoplelist" className="btn">Matches</Link></li>
+                {/* <li className="navLi"><Link to="/profile" className="btn">Profile</Link></li> */}
                 <li className="navLi">
                   <button onClick={handleLogout} className="login-btn">Logout</button>
                 </li>

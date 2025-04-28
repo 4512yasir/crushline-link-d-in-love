@@ -77,7 +77,7 @@ const SignUp = ({ handleClose }) => {
         setIsLoading(false); // Hide loading state
 
         // Redirect after signup (Change route as needed)
-        window.location.href = "/HOME";
+        window.location.href = "/PeopleList";
       } else {
         alert("Signup failed! Please try again.");
         setIsLoading(false);
@@ -133,12 +133,12 @@ const SignUp = ({ handleClose }) => {
           <label className="upload-label">Upload Image:</label>
           <input type="file" name="profileImage" className="signup-input" onChange={handleImageUpload} accept="image/*" required />
 
-          {imagePreview && (
+          {/* {imagePreview && (
             <div className="image-preview-container">
               <h4>Image Preview:</h4>
               <img src={imagePreview} alt="Profile Preview" className="image-preview" />
             </div>
-          )}
+          )} */}
 
           <input type="text" name="bio" placeholder="Bio" className="signup-input" value={formData.bio} onChange={handleChange} />
           <input type="text" name="location" placeholder="Location" className="signup-input" value={formData.location} onChange={handleChange} />
@@ -148,12 +148,12 @@ const SignUp = ({ handleClose }) => {
           <button type="submit" className="signup-button">Sign Up</button>
         </form>
 
-        <p className="or-text">or</p>
+        {/* <p className="or-text">or</p> */}
 
-        <div className="social-login">
+        {/* <div className="social-login">
           <button className="facebook-btn">Sign up with Facebook</button>
           <button className="google-btn">Sign up with Google</button>
-        </div>
+        </div> */}
 
         <button onClick={handleClose} className="closeModalBtn">Close</button>
 

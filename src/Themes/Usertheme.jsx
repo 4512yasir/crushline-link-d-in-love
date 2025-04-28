@@ -1,7 +1,7 @@
 // Themes/Usertheme.jsx
 import React, { createContext, useState, useEffect } from "react";
 
-export const ThemeContext = createContext();
+export const ThemeContext = createContext();// creating our toy box
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(null); // Start as null
