@@ -44,7 +44,7 @@ function GirlyTheme() {
 
         <div className="testimonial-cards">
           <div className="testimonial-card">
-            <img src="/src/assets/blackgirl.jpg" alt="persons image" />
+            <img src="./src/assets/blackgirl.jpg" alt="persons image" />
             <p>
               "I never thought I'd meet someone who shares my passions and
               values. Thanks to this app, I found my soulmate, and we're now
@@ -55,7 +55,7 @@ function GirlyTheme() {
           </div>
 
           <div className="testimonial-card">
-            <img src="/src/assets/blackman.jpg" alt="persons image" />
+            <img src="./src/assets/blackman.jpg" alt="persons image" />
             <p>
               "The interface is so easy to use, and I love how the matches feel
               more genuine compared to other dating apps. I've met so many
@@ -66,7 +66,7 @@ function GirlyTheme() {
           </div>
 
           <div className="testimonial-card">
-            <img src="/src/assets/whitecouple.jpg" alt="persons image" />
+            <img src="./src/assets/whitecouple.jpg" alt="persons image" />
             <p>
               "We matched on a Sunday, met on Wednesday, and by the weekend, we
               were making plans for the future. This app allowed us to find a
@@ -77,7 +77,7 @@ function GirlyTheme() {
           </div>
 
           <div className="testimonial-card">
-            <img src="/src/assets/whitegirl.jpg" alt="persons image" />
+            <img src="./src/assets/whitegirl.jpg" alt="persons image" />
             <p>
               "At first, I was skeptical about online dating. I had tried other
               platforms with little success. But this app proved me wrong.

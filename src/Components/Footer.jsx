@@ -31,7 +31,7 @@ function CopyRight() {
           <div className="logoImageDiv">
             <img
               className="logoImage"
-              src="./src/assets/heart-solid.svg"
+              src="/heart-solid.svg"
               alt="logo"
             />
           </div>

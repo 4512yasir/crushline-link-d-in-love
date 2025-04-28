@@ -13,7 +13,7 @@ export function LoginCard({ setIsLoggedIn, handleClose }) {
     e.preventDefault();
 
     try {
-      const res = await fetch('http://localhost:3000/user');
+      const res = await fetch('/api/user');
       const users = await res.json();
 
       const user = users.find(

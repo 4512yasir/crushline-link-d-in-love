@@ -11,13 +11,7 @@
       "location": "Nairobi",
       "personality": "Outgoing",
       "description": "Lover of the little things in life. Always up for new experiences and making connections.",
-      "age": "27",
-      "isOnline": true,
-      "interests": [
-        "Hiking",
-        "Coffee Brewing",
-        "Photography"
-      ]
+      "isOnline": true
     },
     {
       "id": "2",
@@ -30,13 +24,7 @@
       "location": "Mombasa",
       "personality": "Introvert",
       "description": "Enjoys deep conversations and walks by the ocean.",
-      "age": "23",
-      "isOnline": true,
-      "interests": [
-        "Painting",
-        "Gardening",
-        "Yoga"
-      ]
+      "isOnline": true
     },
     {
       "id": "3",
@@ -49,13 +37,7 @@
       "location": "Kisumu",
       "personality": "Analytical",
       "description": "Always up for a coding challenge or a good match.",
-      "age": "21",
-      "isOnline": false,
-      "interests": [
-        "Coding",
-        "Football",
-        "Gaming"
-      ]
+      "isOnline": false
     },
     {
       "id": "4",
@@ -68,13 +50,7 @@
       "location": "Nakuru",
       "personality": "Thoughtful",
       "description": "Believes in quiet moments and meaningful friendships.",
-      "age": 25,
-      "isOnline": true,
-      "interests": [
-        "Reading",
-        "Writing",
-        "Herbal Tea"
-      ]
+      "isOnline": true
     },
     {
       "id": "5",
@@ -87,13 +63,7 @@
       "location": "Eldoret",
       "personality": "Energetic",
       "description": "Living life one rep at a time.",
-      "age": "29",
-      "isOnline": false,
-      "interests": [
-        "Weightlifting",
-        "Public Speaking",
-        "Nutrition"
-      ]
+      "isOnline": false
     },
     {
       "id": "6",
@@ -106,13 +76,7 @@
       "location": "Thika",
       "personality": "Confident",
       "description": "Exploring the world with a smile and a suitcase.",
-      "age": "24",
-      "isOnline": true,
-      "interests": [
-        "Fashion",
-        "Travel",
-        "Vlogging"
-      ]
+      "isOnline": true
     },
     {
       "id": "7",
@@ -125,13 +89,7 @@
       "location": "Machakos",
       "personality": "Laid-back",
       "description": "On a quest to find the perfect slice and player two.",
-      "age": "30",
-      "isOnline": false,
-      "interests": [
-        "Video Games",
-        "Comics",
-        "Pizza Tasting"
-      ]
+      "isOnline": false
     },
     {
       "id": "8",
@@ -144,13 +102,7 @@
       "location": "Kitale",
       "personality": "Romantic",
       "description": "Writes her heart out under the moonlight.",
-      "age": "28",
-      "isOnline": true,
-      "interests": [
-        "Poetry",
-        "Stargazing",
-        "Journaling"
-      ]
+      "isOnline": true
     },
     {
       "id": "9",
@@ -163,13 +115,7 @@
       "location": "Kericho",
       "personality": "Adventurous",
       "description": "Pedals through code and trails alike.",
-      "age": "31",
-      "isOnline": false,
-      "interests": [
-        "Cycling",
-        "Coding",
-        "Nature Walks"
-      ]
+      "isOnline": false
     },
     {
       "id": "10",
@@ -182,13 +128,7 @@
       "location": "Nanyuki",
       "personality": "Charming",
       "description": "Cooking up melodies and meals.",
-      "age": "24",
-      "isOnline": true,
-      "interests": [
-        "Singing",
-        "Cooking",
-        "Food Blogging"
-      ]
+      "isOnline": true
     },
     {
       "id": "11",
@@ -201,13 +141,7 @@
       "location": "Malindi",
       "personality": "Reflective",
       "description": "Exploring the past and the path ahead.",
-      "age": "21",
-      "isOnline": false,
-      "interests": [
-        "Reading History",
-        "Hiking",
-        "Museum Visits"
-      ]
+      "isOnline": false
     },
     {
       "id": "12",
@@ -220,13 +154,7 @@
       "location": "Naivasha",
       "personality": "Gentle",
       "description": "Brush strokes and paw prints make her day.",
-      "age": "32",
-      "isOnline": true,
-      "interests": [
-        "Painting",
-        "Animal Rescue",
-        "DIY Crafts"
-      ]
+      "isOnline": true
     },
     {
       "id": "13",
@@ -239,13 +167,7 @@
       "location": "Kakamega",
       "personality": "Curious",
       "description": "Captures life one frame at a time.",
-      "age": "28",
-      "isOnline": true,
-      "interests": [
-        "Photography",
-        "Blogging",
-        "Travel"
-      ]
+      "isOnline": true
     },
     {
       "id": "14",
@@ -258,13 +180,7 @@
       "location": "Meru",
       "personality": "Peaceful",
       "description": "Breathing in positivity and peace.",
-      "age": "27",
-      "isOnline": false,
-      "interests": [
-        "Yoga",
-        "Meditation",
-        "Healthy Eating"
-      ]
+      "isOnline": false
     },
     {
       "id": "15",
@@ -277,13 +193,7 @@
       "location": "Garissa",
       "personality": "Energetic",
       "description": "Beats and vibes are his second language.",
-      "age": "22",
-      "isOnline": true,
-      "interests": [
-        "DJing",
-        "Music Production",
-        "Dancing"
-      ]
+      "isOnline": true
     },
     {
       "id": "16",
@@ -296,13 +206,7 @@
       "location": "Embu",
       "personality": "Warm",
       "description": "Writes with her heart and lives in bloom.",
-      "age": "33",
-      "isOnline": false,
-      "interests": [
-        "Blogging",
-        "Nature Walks",
-        "Plant Care"
-      ]
+      "isOnline": false
     },
     {
       "id": "17",
@@ -315,13 +219,7 @@
       "location": "Naivasha",
       "personality": "Expressive",
       "description": "Finds joy in music and the golden hour.",
-      "age": "32",
-      "isOnline": true,
-      "interests": [
-        "Dancing",
-        "Photography",
-        "Travel"
-      ]
+      "isOnline": true
     },
     {
       "id": "18",
@@ -334,6 +232,7 @@
       "location": "Kakamega",
       "personality": "Friendly",
       "description": "Cooking up memories and wagging tails.",
+
       "age": 30,
       "isOnline": false,
       "interests": [

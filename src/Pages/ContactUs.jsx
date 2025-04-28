@@ -8,14 +8,41 @@ const ContactUs = () => {
     message: "",
   });
 
+  // Handle input changes in the form
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  // Handle message submission
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert(`Thank you for reaching out, ${formData.name}! We'll get back to you soon.`);
-    setFormData({ name: "", email: "", message: "" });
+
+    const newMessage = {
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+      date: new Date().toLocaleString(),
+    };
+
+    try {
+      const response = await fetch("/messages", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(newMessage),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to save message");
+      }
+
+      alert(`Thank you for reaching out, ${formData.name}! We've saved your message.`);
+
+      setFormData({ name: "", email: "", message: "" }); // Reset the form
+
+    } catch (error) {
+      console.error("Error sending message:", error);
+      alert("Something went wrong, please try again.");
+    }
   };
 
   return (
