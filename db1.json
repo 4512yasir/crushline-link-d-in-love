@@ -240,76 +240,7 @@
         "Dog Training",
         "Food Styling"
       ]
-    },
-    {
-      "id": "c67c",
-      "username": "Somalian_master",
-      "email": "yasiryaska1@gmail.com",
-      "phone": "0758741425",
-      "password": "12345",
-      "age": "23",
-      "gender": "male",
-      "profileImage": "Screenshot from 2025-04-18 17-27-40.png",
-      "bio": "ggg",
-      "location": "Nairobi",
-      "personality": "low playing personality",
-      "description": "trfbher"
-    },
-    {
-      "id": "6449",
-      "username": "Jerald",
-      "email": "nyaga@gmail.com",
-      "phone": "0721584872",
-      "password": "1234",
-      "age": "32",
-      "gender": "male",
-      "profileImage": "chickencurry.jpg",
-      "bio": "short brown handsome beard",
-      "location": "nairofi",
-      "personality": "outgoing",
-      "description": "fun to work with"
-    },
-    {
-      "id": "0283",
-      "username": "Yasir",
-      "email": "moha@gmail.com",
-      "phone": "0723589541",
-      "password": "1234",
-      "age": "24",
-      "gender": "male",
-      "profileImage": "chocolatecookie.jpg",
-      "bio": "short brown handsome beard",
-      "location": "nairofi",
-      "personality": "introvert",
-      "description": "fun to work with"
-    },
-    {
-      "id": "faa8",
-      "username": "Elly",
-      "email": "elly@gmail.com",
-      "phone": "0789562410",
-      "password": "1234",
-      "age": "27",
-      "gender": "male",
-      "profileImage": "salad.jpg",
-      "bio": "short brown handsome beard",
-      "location": "Eldoret",
-      "personality": "outgoing",
-      "description": "fun to work with"
-    },
-    {
-      "id": "df3e",
-      "username": "faith",
-      "email": "faynkarichia@gmail.com",
-      "phone": "0721584872",
-      "password": "1234",
-      "age": "12",
-      "gender": "female",
-      "profileImage": "spaghetti.jpg",
-      "bio": "short brown handsome beard",
-      "location": "nairofi",
-      "personality": "outgoing",
-      "description": "gggg"
     }
+ 
   ]
 }

@@ -15,7 +15,7 @@ export const ThemeProvider = ({ children }) => {
 
   useEffect(() => {
     if (theme) {
-      localStorage.setItem("appTheme", theme);
+      localStorage.setItem("appTheme", theme); //we set the theme in the local storage
       document.body.classList.remove("male-theme", "female-theme");
       document.body.classList.add(theme === "male" ? "male-theme" : "female-theme");
     }
