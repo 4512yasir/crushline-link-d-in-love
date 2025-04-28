@@ -31,7 +31,7 @@ export default function Header({ isLoggedIn, setIsLoggedIn }) {
       <header className="header">
         <div className="logoDiv">
           <div className="logoImageDiv">
-            <img className="logoImage" src="./src/assets/heart-solid.svg" alt="logo" />
+          <img className="logoImage" src="/heart-solid.svg" alt="logo" />
           </div>
           <div className="logoNameDiv">
             <p className="logoNamePara">Link’d In<br />Love</p>
@@ -44,7 +44,8 @@ export default function Header({ isLoggedIn, setIsLoggedIn }) {
               <Link to="/" className="btn">HOME</Link>
             </li>
             <li className="navLi">
-              <Link to="/ContactUs" className="btn">Contact Us</Link>
+            <Link to="/ContactUs" className="btn">Contact Us</Link>
+
             </li>
 
             {/* Conditionally render links based on login state */}

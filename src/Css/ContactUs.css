@@ -106,3 +106,56 @@
         font-size: 0.95rem;
     }
 }
+.message-container {
+    display: flex;
+    justify-content: flex-end; /* Push message to the right */
+    align-items: center;
+    text-align: right;
+    padding: 10px;
+  }
+  
+  .message-container p {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 300px;
+  }
+  .delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .delete-btn:hover {
+    color: darkred;
+  }
+
+  .replies {
+  padding-left: 20px;
+  border-left: 2px solid #ccc;
+  margin-top: 5px;
+}
+
+.reply-text {
+  background-color: #1b1b1c;
+  padding: 5px;
+  border-radius: 5px;
+  max-width: 250px;
+}
+
+.reply-btn {
+  margin-left: 5px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #4CAF50;
+
+  border: none;
+  border-radius: 5px;
+}
+
+.reply-btn:hover {
+  background-color: #388E3C;
+}
