@@ -54,6 +54,7 @@ export default function Profile() {
           </p>
         </div>
 
+
         <div className="interests">
           <strong>Interests:</strong>
           <ul>
@@ -61,6 +62,7 @@ export default function Profile() {
               <li key={index}>{interest}</li>
             ))}
           </ul>
+
         </div>
       </div>
     </div> 
